@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="15.892" tests="8" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\training\SeleniumSession\target\test-classes;C:\training\SeleniumSession\target\classes;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.22.0\selenium-java-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-api\4.22.0\selenium-api-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.22.0\selenium-chrome-driver-4.22.0.jar;C:\Users\yogi\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.22.0\selenium-chromium-driver-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-json\4.22.0\selenium-json-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.22.0\selenium-manager-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.22.0\selenium-devtools-v124-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.22.0\selenium-devtools-v125-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v126\4.22.0\selenium-devtools-v126-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.22.0\selenium-devtools-v85-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.22.0\selenium-edge-driver-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.22.0\selenium-firefox-driver-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-http\4.22.0\selenium-http-4.22.0.jar;C:\Users\yogi\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.22.0\selenium-ie-driver-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.22.0\selenium-remote-driver-4.22.0.jar;C:\Users\yogi\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\yogi\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\yogi\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\yogi\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\yogi\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\yogi\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\yogi\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-api\1.39.0\opentelemetry-api-1.39.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-context\1.39.0\opentelemetry-context-1.39.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.39.0\opentelemetry-exporter-logging-1.39.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.39.0\opentelemetry-sdk-common-1.39.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.39.0\opentelemetry-sdk-extension-autoconfigure-spi-1.39.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.39.0\opentelemetry-sdk-extension-autoconfigure-1.39.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.39.0-alpha\opentelemetry-api-incubator-1.39.0-alpha.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.39.0\opentelemetry-sdk-trace-1.39.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.39.0\opentelemetry-sdk-1.39.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.39.0\opentelemetry-sdk-metrics-1.39.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.39.0\opentelemetry-sdk-logs-1.39.0.jar;C:\Users\yogi\.m2\repository\net\bytebuddy\byte-buddy\1.14.17\byte-buddy-1.14.17.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-os\4.22.0\selenium-os-4.22.0.jar;C:\Users\yogi\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.22.0\selenium-safari-driver-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-support\4.22.0\selenium-support-4.22.0.jar;C:\Users\yogi\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\yogi\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\yogi\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\yogi\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\yogi\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\yogi\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\yogi\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\yogi\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\yogi\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\yogi\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\yogi\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\yogi\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.9.0\maven-compiler-plugin-3.9.0.jar;C:\Users\yogi\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.3.4\maven-shared-utils-3.3.4.jar;C:\Users\yogi\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\yogi\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\yogi\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\yogi\.m2\repository\org\codehaus\plexus\plexus-java\1.1.0\plexus-java-1.1.0.jar;C:\Users\yogi\.m2\repository\org\ow2\asm\asm\9.2\asm-9.2.jar;C:\Users\yogi\.m2\repository\com\thoughtworks\qdox\qdox\2.0.0\qdox-2.0.0.jar;C:\Users\yogi\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.9.0\plexus-compiler-api-2.9.0.jar;C:\Users\yogi\.m2\repository\org\codehaus\plexus\plexus-utils\3.3.0\plexus-utils-3.3.0.jar;C:\Users\yogi\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.9.0\plexus-compiler-manager-2.9.0.jar;C:\Users\yogi\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.9.0\plexus-compiler-javac-2.9.0.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\yogi\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\yogi\AppData\Local\Temp\surefire2813673567005403824\surefirebooter-20241208145226495_3.jar C:\Users\yogi\AppData\Local\Temp\surefire2813673567005403824 2024-12-08T14-52-24_756-jvmRun1 surefire-20241208145226495_1tmp surefire_0-20241208145226495_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\training\SeleniumSession\target\test-classes;C:\training\SeleniumSession\target\classes;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.22.0\selenium-java-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-api\4.22.0\selenium-api-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.22.0\selenium-chrome-driver-4.22.0.jar;C:\Users\yogi\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.22.0\selenium-chromium-driver-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-json\4.22.0\selenium-json-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.22.0\selenium-manager-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.22.0\selenium-devtools-v124-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.22.0\selenium-devtools-v125-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v126\4.22.0\selenium-devtools-v126-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.22.0\selenium-devtools-v85-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.22.0\selenium-edge-driver-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.22.0\selenium-firefox-driver-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-http\4.22.0\selenium-http-4.22.0.jar;C:\Users\yogi\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.22.0\selenium-ie-driver-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.22.0\selenium-remote-driver-4.22.0.jar;C:\Users\yogi\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\yogi\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\yogi\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\yogi\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\yogi\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\yogi\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\yogi\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-api\1.39.0\opentelemetry-api-1.39.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-context\1.39.0\opentelemetry-context-1.39.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.39.0\opentelemetry-exporter-logging-1.39.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.39.0\opentelemetry-sdk-common-1.39.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.39.0\opentelemetry-sdk-extension-autoconfigure-spi-1.39.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.39.0\opentelemetry-sdk-extension-autoconfigure-1.39.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.39.0-alpha\opentelemetry-api-incubator-1.39.0-alpha.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.39.0\opentelemetry-sdk-trace-1.39.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.39.0\opentelemetry-sdk-1.39.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.39.0\opentelemetry-sdk-metrics-1.39.0.jar;C:\Users\yogi\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.39.0\opentelemetry-sdk-logs-1.39.0.jar;C:\Users\yogi\.m2\repository\net\bytebuddy\byte-buddy\1.14.17\byte-buddy-1.14.17.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-os\4.22.0\selenium-os-4.22.0.jar;C:\Users\yogi\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.22.0\selenium-safari-driver-4.22.0.jar;C:\Users\yogi\.m2\repository\org\seleniumhq\selenium\selenium-support\4.22.0\selenium-support-4.22.0.jar;C:\Users\yogi\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\yogi\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\yogi\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\yogi\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\yogi\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\yogi\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\yogi\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\yogi\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\yogi\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\yogi\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\yogi\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\yogi\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.9.0\maven-compiler-plugin-3.9.0.jar;C:\Users\yogi\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.3.4\maven-shared-utils-3.3.4.jar;C:\Users\yogi\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\yogi\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\yogi\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\yogi\.m2\repository\org\codehaus\plexus\plexus-java\1.1.0\plexus-java-1.1.0.jar;C:\Users\yogi\.m2\repository\org\ow2\asm\asm\9.2\asm-9.2.jar;C:\Users\yogi\.m2\repository\com\thoughtworks\qdox\qdox\2.0.0\qdox-2.0.0.jar;C:\Users\yogi\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.9.0\plexus-compiler-api-2.9.0.jar;C:\Users\yogi\.m2\repository\org\codehaus\plexus\plexus-utils\3.3.0\plexus-utils-3.3.0.jar;C:\Users\yogi\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.9.0\plexus-compiler-manager-2.9.0.jar;C:\Users\yogi\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.9.0\plexus-compiler-javac-2.9.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\yogi"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Users\yogi\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\training\SeleniumSession"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\yogi\AppData\Local\Temp\surefire2813673567005403824\surefirebooter-20241208145226495_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="22.0.1+8"/>
+    <property name="user.name" value="yogi"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-22.0.1+8"/>
+    <property name="localRepository" value="C:\Users\yogi\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\yogi\AppData\Local\Temp\"/>
+    <property name="java.version" value="22.0.1"/>
+    <property name="user.dir" value="C:\training\SeleniumSession"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\yogi\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/yogi/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149/jre/bin/server;C:/Users/yogi/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-11\bin;C:\Users\yogi\AppData\Local\Microsoft\WindowsApps;C:\Users\yogi\AppData\Local\Programs\Microsoft VS Code\bin;;C:\Users\yogi\Desktop;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="22.0.1+8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="launchScreenTitleTest" classname="Test.LunchPageTest" time="0.067">
+    <system-out><![CDATA[12-08-2024 14:52:28 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 -  Execution is Started [Lorg.testng.ITestNGMethod;@366ac49bSun Dec 08 14:52:28 IST 2024
+12-08-2024 14:52:32 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 - Name of the browser:chrome
+12-08-2024 14:52:32 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 - Version of the browser:131.0.6778.109
+12-08-2024 14:52:35 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 -  Execution of the test case is Started: Test case is: LunchPageTest.launchScreenTitleTest()[pri:1, instance:Test.LunchPageTest@548d708a]
+12-08-2024 14:52:35 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 -  Execution of the test case is Success Test case is: LunchPageTest.launchScreenTitleTest()[pri:1, instance:Test.LunchPageTest@548d708a]
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Dec 08, 2024 2:52:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 131
+Dec 08, 2024 2:52:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 131.0.6778.109. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="launchScreenMyAccountDropdownOptionsTitleTest" classname="Test.LunchPageTest" time="0.201">
+    <system-out><![CDATA[12-08-2024 14:52:35 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 -  Execution of the test case is Started: Test case is: LunchPageTest.launchScreenMyAccountDropdownOptionsTitleTest()[pri:2, instance:Test.LunchPageTest@548d708a]
+Total titles:2
+Title:Register
+Title:Login
+12-08-2024 14:52:35 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 -  Execution of the test case is Success Test case is: LunchPageTest.launchScreenMyAccountDropdownOptionsTitleTest()[pri:2, instance:Test.LunchPageTest@548d708a]
+]]></system-out>
+  </testcase>
+  <testcase name="loginScreenNavigationTest" classname="Test.LunchPageTest" time="0.473">
+    <system-out><![CDATA[12-08-2024 14:52:35 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 -  Execution of the test case is Started: Test case is: LunchPageTest.loginScreenNavigationTest()[pri:3, instance:Test.LunchPageTest@548d708a]
+12-08-2024 14:52:35 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 - Total no of web elements found: 2
+Element|Login Is Selected
+12-08-2024 14:52:36 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 - ----- Selected login button from launch screen, title found in the login screen Account Login ----- 
+12-08-2024 14:52:36 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 -  Execution of the test case is Success Test case is: LunchPageTest.loginScreenNavigationTest()[pri:3, instance:Test.LunchPageTest@548d708a]
+]]></system-out>
+  </testcase>
+  <testcase name="loginTest" classname="Test.LoginPageTest" time="0.926">
+    <system-out><![CDATA[12-08-2024 14:52:36 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 -  Execution of the test case is Started: Test case is: LoginPageTest.loginTest()[pri:4, instance:Test.LoginPageTest@7bba5817]
+12-08-2024 14:52:37 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 - ----- Logging in with second@gmail.com 12345 Title of the dashboard screen My Account
+12-08-2024 14:52:37 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 -  Execution of the test case is Success Test case is: LoginPageTest.loginTest()[pri:4, instance:Test.LoginPageTest@7bba5817]
+]]></system-out>
+  </testcase>
+  <testcase name="myAccountSectionLinksTitleTest" classname="Test.MyAccountScreenTest" time="0.33">
+    <system-out><![CDATA[12-08-2024 14:52:37 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 -  Execution of the test case is Started: Test case is: MyAccountScreenTest.myAccountSectionLinksTitleTest()[pri:5, instance:Test.MyAccountScreenTest@742ff096]
+Total titles:27
+Title:
+Title:Account
+Title:Edit your account information
+Title:Change your password
+Title:Modify your address book entries
+Title:Modify your wish list
+Title:View your order history
+Title:Downloads
+Title:Your Reward Points
+Title:View your return requests
+Title:Your Transactions
+Title:Recurring payments
+Title:Register for an affiliate account
+Title:Subscribe / unsubscribe to newsletter
+Title:My Account
+Title:Edit Account
+Title:Password
+Title:Address Book
+Title:Wish List
+Title:Order History
+Title:Downloads
+Title:Recurring payments
+Title:Reward Points
+Title:Returns
+Title:Transactions
+Title:Newsletter
+Title:Logout
+12-08-2024 14:52:37 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 -  Execution of the test case is Success Test case is: MyAccountScreenTest.myAccountSectionLinksTitleTest()[pri:5, instance:Test.MyAccountScreenTest@742ff096]
+]]></system-out>
+  </testcase>
+  <testcase name="profileScreenToHomeScreenNavigationTest" classname="Test.MyAccountScreenTest" time="0.509">
+    <system-out><![CDATA[12-08-2024 14:52:37 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 -  Execution of the test case is Started: Test case is: MyAccountScreenTest.profileScreenToHomeScreenNavigationTest()[pri:6, instance:Test.MyAccountScreenTest@742ff096]
+12-08-2024 14:52:38 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 -  Execution of the test case is Success Test case is: MyAccountScreenTest.profileScreenToHomeScreenNavigationTest()[pri:6, instance:Test.MyAccountScreenTest@742ff096]
+]]></system-out>
+  </testcase>
+  <testcase name="productDetailNavigationTest" classname="Test.LandingScreenTest" time="0.947">
+    <system-out><![CDATA[12-08-2024 14:52:38 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 -  Execution of the test case is Started: Test case is: LandingScreenTest.productDetailNavigationTest()[pri:7, instance:Test.LandingScreenTest@75437611]
+12-08-2024 14:52:38 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 - Total no of web elements found: 4
+Element|iPhone Is Selected
+12-08-2024 14:52:39 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 - Title of the element to be select is found null: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e2468194035ed3620962392b4361dc4f, getElementText {id=f.2A19B5E7FCA2D7C6010545CAA9B3E379.d.BC1E1AAE9A327E1E124A31AAA945AD87.e.110}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\yogi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51366}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51366/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e2468194035ed3620962392b4361dc4f)] -> xpath: //div[@class='product-thumb transition']//h4//a]
+Session ID: e2468194035ed3620962392b4361dc4f
+12-08-2024 14:52:39 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 -  Execution of the test case is Success Test case is: LandingScreenTest.productDetailNavigationTest()[pri:7, instance:Test.LandingScreenTest@75437611]
+]]></system-out>
+    <system-err><![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e2468194035ed3620962392b4361dc4f, getElementText {id=f.2A19B5E7FCA2D7C6010545CAA9B3E379.d.BC1E1AAE9A327E1E124A31AAA945AD87.e.110}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\yogi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51366}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51366/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e2468194035ed3620962392b4361dc4f)] -> xpath: //div[@class='product-thumb transition']//h4//a]
+Session ID: e2468194035ed3620962392b4361dc4f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at Utils.ReusableMethods.selectWebElementFromList(ReusableMethods.java:117)
+	at PageFactory.HomePage.selectProductFromFeaturedCollection(HomePage.java:31)
+	at Test.LandingScreenTest.productDetailNavigationTest(LandingScreenTest.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-err>
+  </testcase>
+  <testcase name="productImageLinksStatusCodeTest" classname="Test.ProductDetailsTest" time="2.588">
+    <system-out><![CDATA[12-08-2024 14:52:39 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 -  Execution of the test case is Started: Test case is: ProductDetailsTest.productImageLinksStatusCodeTest()[pri:8, instance:Test.ProductDetailsTest@350aac89]
+12-08-2024 14:52:39 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 - Total no of links found: 6
+12-08-2024 14:52:39 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 - Link: https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_1-228x228.jpg
+Image URL is valid: Staus Code Is: 200 for the Product link:https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_1-228x228.jpg
+12-08-2024 14:52:40 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 - Link: https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_6-74x74.jpg
+Image URL is valid: Staus Code Is: 200 for the Product link:https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_6-74x74.jpg
+12-08-2024 14:52:40 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 - Link: https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_2-74x74.jpg
+Image URL is valid: Staus Code Is: 200 for the Product link:https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_2-74x74.jpg
+12-08-2024 14:52:41 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 - Link: https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_5-74x74.jpg
+Image URL is valid: Staus Code Is: 200 for the Product link:https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_5-74x74.jpg
+12-08-2024 14:52:41 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 - Link: https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_3-74x74.jpg
+Image URL is valid: Staus Code Is: 200 for the Product link:https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_3-74x74.jpg
+12-08-2024 14:52:41 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 - Link: https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_4-74x74.jpg
+Image URL is valid: Staus Code Is: 200 for the Product link:https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_4-74x74.jpg
+12-08-2024 14:52:41 ReusableMethods.java INFO  [main] /SeleniumSession/src/main/resources/log4j.properties 45 -  Execution of the test case is Success Test case is: ProductDetailsTest.productImageLinksStatusCodeTest()[pri:8, instance:Test.ProductDetailsTest@350aac89]
+]]></system-out>
+  </testcase>
+</testsuite>
