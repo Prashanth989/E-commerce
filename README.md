@@ -1,4 +1,5 @@
 **Languages and Frameworks**
+- **Eclipse**: Editor
 - **Selenium Webdriver**: Automation tool
 - **testNG framework**: Managing the test cases
 - **Maven**: Build Automation tool
