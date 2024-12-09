@@ -22,6 +22,12 @@ public final class LaunchPage
 		PageFactory.initElements(DriverManager.driver, this);
 	}
 
+	public String getLaunchScreenTitle()
+	{
+		String launchScreenTitle = ReusableMethods.getTitle();
+		return launchScreenTitle;
+	}
+
 	public void selectMyAccountDropdownButton()
 	{
 		ReusableMethods.waitAndClick(myAccountDropdown);
@@ -42,10 +48,5 @@ public final class LaunchPage
 	}
 
 
-	public String getTitle()
-	{
-		String launchScreenTitle = ReusableMethods.getTitle();
-		return launchScreenTitle;
-	}
 
 }

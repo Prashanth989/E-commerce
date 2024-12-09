@@ -15,15 +15,12 @@ public final class ProductDetailsTest extends BaseTest
 	@Test(priority = 8)
 	public void productImageLinksStatusCodeTest() throws IOException 
 	{
-
-
 		details = new ProductDetails();
 
-		boolean getValve = details.productLinkSourceValidation();
-		Assert.assertFalse(getValve);
+		boolean appResult = details.isProductLinkSourceEmpty();
+		Assert.assertFalse(appResult, "Product link source Valve is empty");
 
-
-		int getStatus = details.getProductLinkStatusCode();
-		Assert.assertEquals(getStatus, 200);
+		int linkStatus = details.getProductLinkStatusCode();
+		Assert.assertEquals(linkStatus, 200, "Status Code of the Product is not 200");
 	}
 }

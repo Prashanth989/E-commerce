@@ -13,7 +13,6 @@ public final class MyAccountScreenTest extends BaseTest
 
 	MyAccountPage myAccount;
 
-
 	@Test(priority = 5)
 	public void myAccountSectionLinksTitleTest() 
 	{
@@ -21,19 +20,15 @@ public final class MyAccountScreenTest extends BaseTest
 		myAccount= new MyAccountPage();
 		List<String> myAccountSectionLinksTitle = myAccount.getMyAccountSectionLinksText();
 		
-		Assert.assertNotNull(myAccountSectionLinksTitle);
-
+		Assert.assertNotNull(myAccountSectionLinksTitle, "My Account section titles are null");
 	}
 
 
 	@Test(priority = 6)
 	public void profileScreenToHomeScreenNavigationTest() 
 	{
-
 		boolean isNavigating= myAccount.navigateToHomeScreenOnSelectingLogo();
-		
-		Assert.assertTrue(isNavigating);
-
+		Assert.assertTrue(isNavigating, "Profile screen to home screen redirection is failed");
 	}
 
 }

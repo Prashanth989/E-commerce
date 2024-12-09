@@ -27,7 +27,7 @@ public final class LoginPageTest extends BaseTest
 
 		
 		ReusableMethods.log("----- Logging in with " + username + " " + pin  + " Title of the dashboard screen " + myAccountTitle);
-		Assert.assertEquals(myAccountTitle, "My Account");
+		Assert.assertEquals(myAccountTitle, "My Account", "My Account title is not matched, Redirection to My Account Page is failed");
 	}
 }
 

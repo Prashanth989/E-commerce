@@ -11,27 +11,24 @@ public class ReadPropertiesFile
 
 	public static String getValve(String key) 
 	{
-
 		try
 		{
-
 			FileInputStream input = new FileInputStream(Variables.locProject + "/src/main/resources/Application.config");
 
 			prop = new Properties();
 			prop.load(input);
-
+			
 			valve = prop.getProperty(key);
 		}
 
 		catch(Exception e)
 		{
+			ReusableMethods.log("Valve is not fetched for the Key: " + key +" " + "Exception got: " + e.getMessage());
 			e.printStackTrace();
 		}
 
 		return valve;
 	}
-
-
 
 
 }

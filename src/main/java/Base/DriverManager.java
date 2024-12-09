@@ -15,12 +15,9 @@ import Utils.Variables;
 public class DriverManager
 {
 	public static WebDriver driver;
-
 	static String remoteBrowserName;
 	static String remoteBrowserVersion;
-
 	static String browserToLaunch;
-
 
 	public static WebDriver getDriver() 
 	{
@@ -73,8 +70,6 @@ public class DriverManager
 			ReusableMethods.log("Web browser is not initialized due to the Exception: " + e.getMessage());
 		}
 
-
-
 		driver.manage().window().maximize();
 		driver.get(ReadPropertiesFile.getValve("applicationUrl"));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Variables.pageLoadTimeOut));
@@ -83,7 +78,6 @@ public class DriverManager
 
 	public static void quitDriver()
 	{
-
 		driver.quit();
 	}
 

@@ -7,7 +7,6 @@ import org.testng.ITestResult;
 
 
 
-
 public class TestNGListener implements ITestListener
 {
 
@@ -20,9 +19,9 @@ public class TestNGListener implements ITestListener
 	public void onFinish(ITestContext context)
 	{ 
 		ExtentReporter.flushExtent();
-		ReusableMethods.log(" Execution is finished " + context.getName() + context.getStartDate() + "Total no of test case Passed: " + context.getPassedTests());
-		ReusableMethods.log(" Execution is finished " + context.getName() + context.getStartDate() + "Total no of test case failed: " + context.getFailedTests());
-		ReusableMethods.log(" Execution is finished " + context.getName() + context.getStartDate() + "Total no of test case Skipped: " + context.getSkippedTests());
+		ReusableMethods.log(" Execution is finished " + context.getName() + context.getStartDate() + "Total test case Passed: " + context.getPassedTests());
+		ReusableMethods.log(" Execution is finished " + context.getName() + context.getStartDate() + "Total test case failed: " + context.getFailedTests());
+		ReusableMethods.log(" Execution is finished " + context.getName() + context.getStartDate() + "Total test case Skipped: " + context.getSkippedTests());
 	}
 
 	public void onTestStart(ITestResult result)

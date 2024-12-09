@@ -21,8 +21,8 @@ public final class LunchPageTest extends BaseTest
 	{
 		beforeLogin = new LaunchPage();
 		
-		String launchTitle = beforeLogin.getTitle();
-		Assert.assertEquals(launchTitle, Variables.lunchTitle);
+		String launchTitle = beforeLogin.getLaunchScreenTitle();
+		Assert.assertEquals(launchTitle, Variables.lunchTitle, "Launch Page title is not matched, Url failed to land on the launch page");
 	}
 
 
@@ -31,7 +31,7 @@ public final class LunchPageTest extends BaseTest
 	{
 
 		List<String> dropdownTitles = beforeLogin.getMyAccountDropdownElementsText();
-		Assert.assertNotNull(dropdownTitles, "My Account button text is null");
+		Assert.assertNotNull(dropdownTitles, "My Account dropdown titles are null");
 	}
 
 
@@ -42,8 +42,7 @@ public final class LunchPageTest extends BaseTest
 		beforeLogin.selectElementFromMyAccountDropdown();
 
 		String loginScreenTitle = ReusableMethods.getTitle();
-		ReusableMethods.log("----- Selected login button from launch screen, title found in the login screen " + loginScreenTitle + " ----- ");
-		Assert.assertEquals(loginScreenTitle, Variables.loginScreenTitle);
+		Assert.assertEquals(loginScreenTitle, Variables.loginScreenTitle, "Login page title is not matched, Redirection to login screen is failed");
 
 	}
 }

@@ -22,12 +22,12 @@ public class ProductDetails
 	}
 
 
-	public boolean productLinkSourceValidation()
+	public boolean isProductLinkSourceEmpty()
 	{
 		boolean result = ReusableMethods.checkProductLinkSourceIsNotEmpty(productImageLinks, "src");
-	    return result;
+		return result;
 	}
-		
+
 	public int getProductLinkStatusCode()
 	{
 		int statusCode= ReusableMethods.checkStatusCodeOfLink(productImageLinks, "src");

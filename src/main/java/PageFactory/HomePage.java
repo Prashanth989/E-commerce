@@ -23,7 +23,6 @@ public final class HomePage
 	}
 
 
-
 	public String selectProductFromFeaturedCollection()
 	{
 		String productToBeSelect = "iPhone";

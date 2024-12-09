@@ -6,7 +6,6 @@ public class Variables
 	public static String lunchTitle = "Your Store";
 
 	public static String loginScreenTitle = "Account Login";
-	public static String registerTitle = "Register Account";
 	
 	public static int impliicitWait = 5;
 
@@ -14,7 +13,7 @@ public class Variables
 	public static int threadSleep = 5;
 	public static int pageLoadTimeOut = 9;
 	
-	
+
 	public static String extentReportTitle = "Automation report";
 	public static String applicationName = "Naveen Automation Open Cart";
 	

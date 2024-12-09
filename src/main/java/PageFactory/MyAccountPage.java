@@ -39,7 +39,4 @@ public final class MyAccountPage
 		return DriverManager.driver.getCurrentUrl().contains("/home");
 	}
 	
-	
-	
-	
 }

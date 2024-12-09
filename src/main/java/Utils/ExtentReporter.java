@@ -34,21 +34,18 @@ public class ExtentReporter
 	{
 		test = extent.createTest(nameOfTheTest);
 		test.log(Status.SKIP, "Test case: " + nameOfTheTest + " is Skipped");
-
 	}
 
 	public static void logPassedTestOnExtentReport(String nameOfTheTest)
 	{
 		test = extent.createTest(nameOfTheTest);
 		test.log(Status.PASS, "Test case: " + nameOfTheTest + " is Passed");
-
 	}
 
 	public static void logfailedTestOnExtentReport(String nameOfTheTest)
 	{
 		test = extent.createTest(nameOfTheTest);
 		test.log(Status.FAIL, "Test case: " + nameOfTheTest + " is failed");
-
 	}
 
 	public static void flushExtent()

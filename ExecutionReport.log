@@ -1,0 +1,142 @@
+2024-12-09 10:25:21,391  INFO [main] properties:42 - Name of the browser initialized: chrome
+2024-12-09 10:25:21,395  INFO [main] properties:42 - Version of the browser:131.0.6778.109
+2024-12-09 10:25:24,565  INFO [main] properties:42 -  Execution of the test case is Started: Test case is: LunchPageTest.launchScreenTitleTest()[pri:1, instance:Test.LunchPageTest@6f10d5b6]
+2024-12-09 10:25:24,618  INFO [main] properties:42 -  Execution of the test case is Success Test case is: LunchPageTest.launchScreenTitleTest()[pri:1, instance:Test.LunchPageTest@6f10d5b6]
+2024-12-09 10:25:24,624  INFO [main] properties:42 -  Execution of the test case is Started: Test case is: LunchPageTest.launchScreenMyAccountDropdownOptionsTitleTest()[pri:2, instance:Test.LunchPageTest@6f10d5b6]
+2024-12-09 10:25:24,826  INFO [main] properties:42 -  Execution of the test case is Success Test case is: LunchPageTest.launchScreenMyAccountDropdownOptionsTitleTest()[pri:2, instance:Test.LunchPageTest@6f10d5b6]
+2024-12-09 10:25:24,831  INFO [main] properties:42 -  Execution of the test case is Started: Test case is: LunchPageTest.loginScreenNavigationTest()[pri:3, instance:Test.LunchPageTest@6f10d5b6]
+2024-12-09 10:25:25,412  INFO [main] properties:42 -  Execution of the test case is Success Test case is: LunchPageTest.loginScreenNavigationTest()[pri:3, instance:Test.LunchPageTest@6f10d5b6]
+2024-12-09 10:25:25,417  INFO [main] properties:42 -  Execution of the test case is Started: Test case is: LoginPageTest.loginTest()[pri:4, instance:Test.LoginPageTest@7fd50002]
+2024-12-09 10:25:26,696  INFO [main] properties:42 - ----- Logging in with second@gmail.com 12345 Title of the dashboard screen My Account
+2024-12-09 10:25:26,697  INFO [main] properties:42 -  Execution of the test case is Success Test case is: LoginPageTest.loginTest()[pri:4, instance:Test.LoginPageTest@7fd50002]
+2024-12-09 10:25:26,700  INFO [main] properties:42 -  Execution of the test case is Started: Test case is: MyAccountScreenTest.myAccountSectionLinksTitleTest()[pri:5, instance:Test.MyAccountScreenTest@533bda92]
+2024-12-09 10:25:27,047  INFO [main] properties:42 -  Execution of the test case is Success Test case is: MyAccountScreenTest.myAccountSectionLinksTitleTest()[pri:5, instance:Test.MyAccountScreenTest@533bda92]
+2024-12-09 10:25:27,050  INFO [main] properties:42 -  Execution of the test case is Started: Test case is: MyAccountScreenTest.profileScreenToHomeScreenNavigationTest()[pri:6, instance:Test.MyAccountScreenTest@533bda92]
+2024-12-09 10:25:27,680  INFO [main] properties:42 -  Execution of the test case is Success Test case is: MyAccountScreenTest.profileScreenToHomeScreenNavigationTest()[pri:6, instance:Test.MyAccountScreenTest@533bda92]
+2024-12-09 10:25:27,682  INFO [main] properties:42 -  Execution of the test case is Started: Test case is: HomeScreenTest.navigationTestToProductDetailsPage()[pri:7, instance:Test.HomeScreenTest@304bb45b]
+2024-12-09 10:25:28,954  INFO [main] properties:42 -  Execution of the test case is Success Test case is: HomeScreenTest.navigationTestToProductDetailsPage()[pri:7, instance:Test.HomeScreenTest@304bb45b]
+2024-12-09 10:25:28,959  INFO [main] properties:42 -  Execution of the test case is Started: Test case is: ProductDetailsTest.productImageLinksStatusCodeTest()[pri:8, instance:Test.ProductDetailsTest@723ca036]
+2024-12-09 10:25:28,980  INFO [main] properties:42 - Total no of links found: 6
+2024-12-09 10:25:29,001  INFO [main] properties:42 - Link: https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_1-228x228.jpg
+2024-12-09 10:25:29,012  INFO [main] properties:42 - Link: https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_6-74x74.jpg
+2024-12-09 10:25:29,022  INFO [main] properties:42 - Link: https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_2-74x74.jpg
+2024-12-09 10:25:29,035  INFO [main] properties:42 - Link: https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_5-74x74.jpg
+2024-12-09 10:25:29,044  INFO [main] properties:42 - Link: https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_3-74x74.jpg
+2024-12-09 10:25:29,052  INFO [main] properties:42 - Link: https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/iphone_4-74x74.jpg
+2024-12-09 10:25:31,378  INFO [main] properties:42 -  Execution of the test case is Success Test case is: ProductDetailsTest.productImageLinksStatusCodeTest()[pri:8, instance:Test.ProductDetailsTest@723ca036]
+2024-12-09 10:25:31,682 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/spark.spa.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,684 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/spark.spa_en_IN.ftl"): Not found
+2024-12-09 10:25:31,685 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/spark.spa_en.ftl"): Not found
+2024-12-09 10:25:31,687 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/spark.spa.ftl"): Found
+2024-12-09 10:25:31,687 DEBUG [main] cache:45 - Loading template for "spark/spark.spa.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/spark.spa.ftl"
+2024-12-09 10:25:31,745 DEBUG [main] cache:45 - Couldn't find template in cache for "commons/commons-variables.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,746 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-variables_en_IN.ftl"): Not found
+2024-12-09 10:25:31,746 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
+2024-12-09 10:25:31,747 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
+2024-12-09 10:25:31,747 DEBUG [main] cache:45 - Loading template for "commons/commons-variables.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/commons/commons-variables.ftl"
+2024-12-09 10:25:31,838 DEBUG [main] cache:45 - Couldn't find template in cache for "commons/commons-macros.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,839 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-macros_en_IN.ftl"): Not found
+2024-12-09 10:25:31,839 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
+2024-12-09 10:25:31,840 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
+2024-12-09 10:25:31,840 DEBUG [main] cache:45 - Loading template for "commons/commons-macros.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/commons/commons-macros.ftl"
+2024-12-09 10:25:31,848 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/macros/attributes.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,848 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attributes_en_IN.ftl"): Not found
+2024-12-09 10:25:31,850 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attributes_en.ftl"): Not found
+2024-12-09 10:25:31,850 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attributes.ftl"): Found
+2024-12-09 10:25:31,851 DEBUG [main] cache:45 - Loading template for "spark/macros/attributes.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/macros/attributes.ftl"
+2024-12-09 10:25:31,854 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/macros/log.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,855 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/log_en_IN.ftl"): Not found
+2024-12-09 10:25:31,856 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/log_en.ftl"): Not found
+2024-12-09 10:25:31,857 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/log.ftl"): Found
+2024-12-09 10:25:31,857 DEBUG [main] cache:45 - Loading template for "spark/macros/log.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/macros/log.ftl"
+2024-12-09 10:25:31,859 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/macros/recurse_nodes.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,860 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en_IN.ftl"): Not found
+2024-12-09 10:25:31,861 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en.ftl"): Not found
+2024-12-09 10:25:31,862 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes.ftl"): Found
+2024-12-09 10:25:31,862 DEBUG [main] cache:45 - Loading template for "spark/macros/recurse_nodes.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/macros/recurse_nodes.ftl"
+2024-12-09 10:25:31,872 DEBUG [main] cache:45 - "spark/macros/log.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+2024-12-09 10:25:31,872 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/macros/attr-common.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,873 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attr-common_en_IN.ftl"): Not found
+2024-12-09 10:25:31,874 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attr-common_en.ftl"): Not found
+2024-12-09 10:25:31,875 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/macros/attr-common.ftl"): Found
+2024-12-09 10:25:31,875 DEBUG [main] cache:45 - Loading template for "spark/macros/attr-common.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/macros/attr-common.ftl"
+2024-12-09 10:25:31,884 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/head.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,884 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/head_en_IN.ftl"): Not found
+2024-12-09 10:25:31,885 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/head_en.ftl"): Not found
+2024-12-09 10:25:31,887 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/head.ftl"): Found
+2024-12-09 10:25:31,887 DEBUG [main] cache:45 - Loading template for "spark/partials/head.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/head.ftl"
+2024-12-09 10:25:31,893 DEBUG [main] cache:45 - Couldn't find template in cache for "commons/commons-inject-css.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,894 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en_IN.ftl"): Not found
+2024-12-09 10:25:31,895 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en.ftl"): Not found
+2024-12-09 10:25:31,896 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-css.ftl"): Found
+2024-12-09 10:25:31,896 DEBUG [main] cache:45 - Loading template for "commons/commons-inject-css.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/commons/commons-inject-css.ftl"
+2024-12-09 10:25:31,898 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/navbar.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,899 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/navbar_en_IN.ftl"): Not found
+2024-12-09 10:25:31,899 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/navbar_en.ftl"): Not found
+2024-12-09 10:25:31,900 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/navbar.ftl"): Found
+2024-12-09 10:25:31,900 DEBUG [main] cache:45 - Loading template for "spark/partials/navbar.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/navbar.ftl"
+2024-12-09 10:25:31,906 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/sidenav.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,907 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en_IN.ftl"): Not found
+2024-12-09 10:25:31,907 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en.ftl"): Not found
+2024-12-09 10:25:31,907 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/sidenav.ftl"): Found
+2024-12-09 10:25:31,908 DEBUG [main] cache:45 - Loading template for "spark/partials/sidenav.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/sidenav.ftl"
+2024-12-09 10:25:31,918 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/test.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,919 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/test_en_IN.ftl"): Not found
+2024-12-09 10:25:31,919 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/test_en.ftl"): Not found
+2024-12-09 10:25:31,920 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/test.ftl"): Found
+2024-12-09 10:25:31,920 DEBUG [main] cache:45 - Loading template for "spark/partials/test.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/test.ftl"
+2024-12-09 10:25:31,938 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,939 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en_IN.ftl"): Not found
+2024-12-09 10:25:31,940 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en.ftl"): Not found
+2024-12-09 10:25:31,940 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/standard-content.ftl"): Found
+2024-12-09 10:25:31,941 DEBUG [main] cache:45 - Loading template for "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/standard-content.ftl"
+2024-12-09 10:25:31,949 DEBUG [main] cache:45 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+2024-12-09 10:25:31,951 DEBUG [main] cache:45 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+2024-12-09 10:25:31,953 DEBUG [main] cache:45 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+2024-12-09 10:25:31,954 DEBUG [main] cache:45 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+2024-12-09 10:25:31,956 DEBUG [main] cache:45 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+2024-12-09 10:25:31,957 DEBUG [main] cache:45 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+2024-12-09 10:25:31,959 DEBUG [main] cache:45 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
+2024-12-09 10:25:31,960 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/exception.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,960 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/exception_en_IN.ftl"): Not found
+2024-12-09 10:25:31,961 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/exception_en.ftl"): Not found
+2024-12-09 10:25:31,961 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/exception.ftl"): Found
+2024-12-09 10:25:31,962 DEBUG [main] cache:45 - Loading template for "spark/partials/exception.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/exception.ftl"
+2024-12-09 10:25:31,964 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/category.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,965 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/category_en_IN.ftl"): Not found
+2024-12-09 10:25:31,966 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/category_en.ftl"): Not found
+2024-12-09 10:25:31,966 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/category.ftl"): Found
+2024-12-09 10:25:31,967 DEBUG [main] cache:45 - Loading template for "spark/partials/category.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/category.ftl"
+2024-12-09 10:25:31,968 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/device.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,969 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/device_en_IN.ftl"): Not found
+2024-12-09 10:25:31,970 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/device_en.ftl"): Not found
+2024-12-09 10:25:31,971 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/device.ftl"): Found
+2024-12-09 10:25:31,971 DEBUG [main] cache:45 - Loading template for "spark/partials/device.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/device.ftl"
+2024-12-09 10:25:31,973 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/author.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,974 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/author_en_IN.ftl"): Not found
+2024-12-09 10:25:31,975 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/author_en.ftl"): Not found
+2024-12-09 10:25:31,976 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/author.ftl"): Found
+2024-12-09 10:25:31,977 DEBUG [main] cache:45 - Loading template for "spark/partials/author.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/author.ftl"
+2024-12-09 10:25:31,978 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/log.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,979 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/log_en_IN.ftl"): Not found
+2024-12-09 10:25:31,980 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/log_en.ftl"): Not found
+2024-12-09 10:25:31,981 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/log.ftl"): Found
+2024-12-09 10:25:31,982 DEBUG [main] cache:45 - Loading template for "spark/partials/log.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/log.ftl"
+2024-12-09 10:25:31,983 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/dashboard.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:31,984 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en_IN.ftl"): Not found
+2024-12-09 10:25:31,985 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en.ftl"): Not found
+2024-12-09 10:25:31,985 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/dashboard.ftl"): Found
+2024-12-09 10:25:31,987 DEBUG [main] cache:45 - Loading template for "spark/partials/dashboard.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/dashboard.ftl"
+2024-12-09 10:25:32,039 DEBUG [main] cache:45 - Couldn't find template in cache for "spark/partials/scripts.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:32,044 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/scripts_en_IN.ftl"): Not found
+2024-12-09 10:25:32,045 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/scripts_en.ftl"): Not found
+2024-12-09 10:25:32,049 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("spark/partials/scripts.ftl"): Found
+2024-12-09 10:25:32,050 DEBUG [main] cache:45 - Loading template for "spark/partials/scripts.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/spark/partials/scripts.ftl"
+2024-12-09 10:25:32,053 DEBUG [main] cache:45 - Couldn't find template in cache for "commons/commons-inject-js.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2024-12-09 10:25:32,054 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js_en_IN.ftl"): Not found
+2024-12-09 10:25:32,055 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js_en.ftl"): Not found
+2024-12-09 10:25:32,056 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js.ftl"): Found
+2024-12-09 10:25:32,056 DEBUG [main] cache:45 - Loading template for "commons/commons-inject-js.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/yogi/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar!/com/aventstack/extentreports/templates/commons/commons-inject-js.ftl"
+2024-12-09 10:25:32,077  INFO [main] properties:42 -  Execution is finished NopackageMon Dec 09 10:25:19 IST 2024Total test case Passed: [ResultMap map=[[TestResult name=navigationTestToProductDetailsPage status=SUCCESS method=HomeScreenTest.navigationTestToProductDetailsPage()[pri:7, instance:Test.HomeScreenTest@304bb45b] output={null}], [TestResult name=launchScreenTitleTest status=SUCCESS method=LunchPageTest.launchScreenTitleTest()[pri:1, instance:Test.LunchPageTest@6f10d5b6] output={null}], [TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest()[pri:4, instance:Test.LoginPageTest@7fd50002] output={null}], [TestResult name=launchScreenMyAccountDropdownOptionsTitleTest status=SUCCESS method=LunchPageTest.launchScreenMyAccountDropdownOptionsTitleTest()[pri:2, instance:Test.LunchPageTest@6f10d5b6] output={null}], [TestResult name=loginScreenNavigationTest status=SUCCESS method=LunchPageTest.loginScreenNavigationTest()[pri:3, instance:Test.LunchPageTest@6f10d5b6] output={null}], [TestResult name=productImageLinksStatusCodeTest status=SUCCESS method=ProductDetailsTest.productImageLinksStatusCodeTest()[pri:8, instance:Test.ProductDetailsTest@723ca036] output={null}], [TestResult name=myAccountSectionLinksTitleTest status=SUCCESS method=MyAccountScreenTest.myAccountSectionLinksTitleTest()[pri:5, instance:Test.MyAccountScreenTest@533bda92] output={null}], [TestResult name=profileScreenToHomeScreenNavigationTest status=SUCCESS method=MyAccountScreenTest.profileScreenToHomeScreenNavigationTest()[pri:6, instance:Test.MyAccountScreenTest@533bda92] output={null}]]]
+2024-12-09 10:25:32,078  INFO [main] properties:42 -  Execution is finished NopackageMon Dec 09 10:25:19 IST 2024Total test case failed: [ResultMap map=[]]
+2024-12-09 10:25:32,078  INFO [main] properties:42 -  Execution is finished NopackageMon Dec 09 10:25:19 IST 2024Total test case Skipped: [ResultMap map=[]]

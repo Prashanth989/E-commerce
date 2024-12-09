@@ -19,15 +19,12 @@ import Base.DriverManager;
 
 public class ReusableMethods
 {
-
-
 	public static String getTitle()
 	{
 		String title = null;
 		try
 		{
 			title = DriverManager.driver.getTitle();
-
 		}
 
 		catch(Exception e)
@@ -41,11 +38,9 @@ public class ReusableMethods
 
 	public static void log(String toPrint)
 	{
-		Logger log = Logger.getLogger("/SeleniumSession/src/main/resources/log4j.properties"); 
+		Logger log = Logger.getLogger(Variables.locProject + "/src/main/resources/log4j.properties"); 
 		log.info(toPrint);
 	}
-
-
 
 	public static void doMouseHover(WebElement element)
 	{
@@ -66,19 +61,14 @@ public class ReusableMethods
 	{
 
 		ArrayList<String> addElementTitle = new ArrayList<String>();
-
-
 		try
 		{
 			System.out.println("Total titles:" + elements.size());
 
-
 			for (WebElement element : elements)
 			{
 				String currentElementText = element.getText();
-
 				System.out.println("Title:" + currentElementText);
-
 
 				if (currentElementText != null)
 				{
@@ -87,10 +77,8 @@ public class ReusableMethods
 
 				else
 				{
-					System.out.println("Element title is null:" + element);
+					System.out.println("Element title is not fetched: " + element);
 				}
-
-
 			}
 
 		}
@@ -110,23 +98,16 @@ public class ReusableMethods
 
 		try
 		{
-			ReusableMethods.log("Total no of web elements found: " + allElement.size());
+			
 			for (WebElement currentWebElement : allElement)
 			{
-
 				String currentWebElementString = currentWebElement.getText();
-
-
 				if (currentWebElementString != null && currentWebElementString.equals(elementNeedToSelect))
 				{
+					
 					System.out.println("Element|" + currentWebElementString + " Is Selected");
 					currentWebElement.click();
-				}
-
-
-				else if(currentWebElementString == null)
-				{
-					ReusableMethods.log("Title of the element to be select is found null: " + currentWebElementString);
+					break;
 				}
 
 			}
@@ -184,16 +165,14 @@ public class ReusableMethods
 			for(WebElement product: elements)
 			{
 				sourceOfLink = product.getAttribute(attributeValve);
-				ReusableMethods.log("Link: " + sourceOfLink);
+				
 				URL url = new URL(sourceOfLink);
 
 				HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 				connection.setRequestMethod("GET");
 				connection.connect();
 
-
 				responseCode = connection.getResponseCode();
-
 
 				if (responseCode == HttpURLConnection.HTTP_OK) {
 					System.out.println("Image URL is valid (Staus Code Is: " + responseCode + ") for the Product link:" + sourceOfLink);
@@ -205,8 +184,9 @@ public class ReusableMethods
 
 
 		}
-		catch (IOException e) {
-
+		
+		catch (IOException e) 
+		{
 			System.out.println("Error accessing image URL: " + sourceOfLink + " - " + e.getMessage());
 		}
 
@@ -230,10 +210,12 @@ public class ReusableMethods
 			}
 
 		}
+		
 		catch (Exception e)
 		{
 			ReusableMethods.log("Null check of the Element is failed: " + "following exceprion:" + e.getMessage());
 		}
+		
 		return isEmpty;
 	}
 

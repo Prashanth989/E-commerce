@@ -35,7 +35,6 @@ public final class LoginPage
 		ReusableMethods.waitAndSendKeys(this.pasword, pasword);
 
 		ReusableMethods.waitAndClick(this.login);
-		
 		return DriverManager.driver.getTitle();
 	}
 
