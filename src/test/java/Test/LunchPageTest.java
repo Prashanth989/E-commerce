@@ -39,20 +39,27 @@ public final class LunchPageTest extends BaseTest {
 	}
 
 	@Test(priority = 4)
+	public void isTopItemsAreShown() {
+		List<String> headerItems = beforeLogin.getHeaderItemsTexts();
+		Assert.assertNotNull(headerItems, "Currencies are not Shown");
+	}
+
+	@Test(priority = 5)
 	public void gadgetsAreShown() {
 		List<String> gadgets = beforeLogin.getGadgetsTitles();
 		Assert.assertNotNull(gadgets, "gadgets are not Shown");
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 6)
 	public void launchScreenMyAccountDropdownOptionsTitleTest() {
+		beforeLogin.selectItemFromHeader("My Account");
 		List<String> dropdownTitles = beforeLogin.getMyAccountDropdownElementsText();
 		Assert.assertNotNull(dropdownTitles, "My Account dropdown titles are null");
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 7)
 	public void loginScreenNavigationTest() {
-		beforeLogin.goTo();
+		beforeLogin.goTo("Login");
 		String loginScreenTitle = ReusableMethods.getTitle();
 		Assert.assertEquals(loginScreenTitle, Variables.loginScreenTitle,
 				"Login page title is not matched, Redirection to login screen is failed");
