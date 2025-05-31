@@ -1,29 +1,38 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
+<suite name="Suite1" verbose="1" thread-count="5" parallel="tests">
+
+	<listeners>
+		<listener class-name="Utils.TestNGListener"></listener>
+	</listeners>
+
+	<test name="Selenium Chrome test">
+
+		<parameter name="Browser" value="Chrome">
+
+		</parameter>
+		<classes>
+			<class name="Test.LunchPageTest" />
+			<class name="Test.LoginPageTest" />
+			<class name="Test.MyAccountScreenTest" />
+			<class name="Test.HomeScreenTest" />
+			<class name="Test.ProductDetailsTest" />
 
 
-<suite name="Suite1" verbose="1">
 
 
-<listeners>
-    <listener class-name = "Utils.TestNGListener"></listener>
-    </listeners>
-    
-    
-  <test name="Nopackage">
-    <classes>
-       
-        <class name="Test.LunchPageTest"/>
-        <class name="Test.LoginPageTest"/>
-        <class name="Test.MyAccountScreenTest"/>
-         <class name="Test.HomeScreenTest"/>
-         <class name="Test.ProductDetailsTest"/>
-        
-    </classes>
-    
-    
-  </test>
+
+
+
+		</classes>
+	</test>
+	
+	
+	
+	
 </suite>
+
+
 
  	
  	

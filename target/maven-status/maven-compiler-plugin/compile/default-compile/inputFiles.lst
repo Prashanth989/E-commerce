@@ -1,10 +1,10 @@
-C:\training\SeleniumSession\src\main\java\Base\DriverManager.java
+C:\training\SeleniumSession\src\main\java\Base\BrowserFactory.java
+C:\training\SeleniumSession\src\main\java\Base\DriverFactory.java
 C:\training\SeleniumSession\src\main\java\PageFactory\HomePage.java
+C:\training\SeleniumSession\src\main\java\PageFactory\LaunchPage.java
 C:\training\SeleniumSession\src\main\java\PageFactory\LoginPage.java
-C:\training\SeleniumSession\src\main\java\PageFactory\LunchPage.java
 C:\training\SeleniumSession\src\main\java\PageFactory\MyAccountPage.java
 C:\training\SeleniumSession\src\main\java\PageFactory\ProductDetails.java
-C:\training\SeleniumSession\src\main\java\PageFactory\Registration.java
 C:\training\SeleniumSession\src\main\java\Utils\ExtentReporter.java
 C:\training\SeleniumSession\src\main\java\Utils\ReadPropertiesFile.java
 C:\training\SeleniumSession\src\main\java\Utils\RemoteBrowser.java

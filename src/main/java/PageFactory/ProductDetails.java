@@ -6,31 +6,25 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import Base.DriverManager;
+import Base.DriverFactory;
 import Utils.ReusableMethods;
 
-public class ProductDetails
-{
+public class ProductDetails {
 
 	@FindBy(xpath = "//ul[@class='thumbnails']//li//img")
 	List<WebElement> productImageLinks;
 
-
-	public ProductDetails()
-	{
-		PageFactory.initElements(DriverManager.driver, this);
+	public ProductDetails() {
+		PageFactory.initElements(DriverFactory.getDriver(), this);
 	}
 
-
-	public boolean isProductLinkSourceEmpty()
-	{
+	public boolean isProductLinkSourceEmpty() {
 		boolean result = ReusableMethods.checkProductLinkSourceIsNotEmpty(productImageLinks, "src");
 		return result;
 	}
 
-	public int getProductLinkStatusCode()
-	{
-		int statusCode= ReusableMethods.checkStatusCodeOfLink(productImageLinks, "src");
+	public int getProductLinkStatusCode() {
+		int statusCode = ReusableMethods.checkStatusCodeOfLink(productImageLinks, "src");
 		return statusCode;
 	}
 

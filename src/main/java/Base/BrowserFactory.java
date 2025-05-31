@@ -2,6 +2,8 @@ package Base;
 
 import java.io.IOException;
 import java.time.Duration;
+
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -12,26 +14,18 @@ import Utils.RemoteBrowser;
 import Utils.ReusableMethods;
 import Utils.Variables;
 
-public class DriverManager
+public class BrowserFactory
 {
-	public static WebDriver driver;
+	
+	public static WebDriver driver = null;
 	static String remoteBrowserName;
 	static String remoteBrowserVersion;
-	static String browserToLaunch;
-
-	public static WebDriver getDriver() 
-	{
-
-		return driver;
-	}
-
-	public static void initializeDriver() throws IOException
-	{
-		try
-		{
-			browserToLaunch = ReadPropertiesFile.getValve("browserName");
-			if (browserToLaunch.equalsIgnoreCase("chrome"))
-			{
+	
+	
+	public static WebDriver initialiseBrowser(String browserToLaunch) throws IOException {
+		try {
+			
+			if (browserToLaunch.equalsIgnoreCase("chrome")) {
 				driver = new ChromeDriver();
 
 				remoteBrowserName = RemoteBrowser.getBrowserName();
@@ -41,8 +35,7 @@ public class DriverManager
 				ReusableMethods.log("Version of the browser:" + remoteBrowserVersion);
 			}
 
-			else if (browserToLaunch.equalsIgnoreCase("firefox"))
-			{
+			else if (browserToLaunch.equalsIgnoreCase("firefox")) {
 				driver = new FirefoxDriver();
 
 				remoteBrowserName = RemoteBrowser.getBrowserName();
@@ -52,8 +45,7 @@ public class DriverManager
 				ReusableMethods.log("Version of the browser:" + remoteBrowserVersion);
 			}
 
-			else if (browserToLaunch.equalsIgnoreCase("Internet Explorer"))
-			{
+			else if (browserToLaunch.equalsIgnoreCase("Internet Explorer")) {
 				driver = new InternetExplorerDriver();
 
 				remoteBrowserName = RemoteBrowser.getBrowserName();
@@ -63,22 +55,20 @@ public class DriverManager
 				ReusableMethods.log("Version of the browser:" + remoteBrowserVersion);
 			}
 
+			driver.manage().window().maximize();
+			driver.get(ReadPropertiesFile.getValve("applicationUrl"));
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Variables.pageLoadTimeOut));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Variables.impliicitWait));
 		}
 
-		catch(Exception e)
-		{
+		
+		
+		catch (Exception e) {
 			ReusableMethods.log("Web browser is not initialized due to the Exception: " + e.getMessage());
 		}
 
-		driver.manage().window().maximize();
-		driver.get(ReadPropertiesFile.getValve("applicationUrl"));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Variables.pageLoadTimeOut));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Variables.impliicitWait));
+		return driver;
 	}
 
-	public static void quitDriver()
-	{
-		driver.quit();
-	}
-
+	
 }

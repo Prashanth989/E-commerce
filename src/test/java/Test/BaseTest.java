@@ -4,23 +4,22 @@ import java.io.IOException;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
-import Base.DriverManager;
+import Base.BrowserFactory;
+import Base.DriverFactory;
 
-public class BaseTest 
-{
 
+public class BaseTest {
+
+	@Parameters({"Browser"})
 	@BeforeTest
-	public static void lunchTheBrowser() throws IOException 
-	{
-
-		DriverManager.initializeDriver();
+	public void launchBrowser(String browserToLaunch) throws IOException {
+		DriverFactory.getInstance().setDriver(BrowserFactory.initialiseBrowser(browserToLaunch));
 	}
 
 	@AfterTest
-	public static void quitBrowser()
-	{
-		DriverManager.quitDriver();
+	public void tearDown() {
+		DriverFactory.getDriver().close();
 	}
-
 }

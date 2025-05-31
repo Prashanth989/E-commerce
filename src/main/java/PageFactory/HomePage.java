@@ -6,25 +6,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import Base.DriverManager;
+import Base.DriverFactory;
 import Utils.ReusableMethods;
 
-
-
-public final class HomePage
-{
+public final class HomePage {
 
 	@FindBy(xpath = "//div[@class='product-thumb transition']//h4//a")
 	List<WebElement> featuredCollection;
 
-	public HomePage()
-	{
-		PageFactory.initElements(DriverManager.driver, this);
+	public HomePage() {
+		PageFactory.initElements(DriverFactory.getDriver(), this);
 	}
 
-
-	public String selectProductFromFeaturedCollection()
-	{
+	public String selectProductFromFeaturedCollection() {
 		String productToBeSelect = "iPhone";
 		ReusableMethods.selectWebElementFromList(featuredCollection, productToBeSelect);
 		return ReusableMethods.getTitle();
