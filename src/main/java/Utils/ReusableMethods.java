@@ -48,13 +48,13 @@ public class ReusableMethods {
 		}
 	}
 
-	public static List<String> fetchTextFromList(List<WebElement> elements) {
+	public static List<String> fetchTextFromList(List<WebElement> currencies) {
 
 		ArrayList<String> addElementTitle = new ArrayList<String>();
 		try {
-			System.out.println("Total titles:" + elements.size());
+			System.out.println("Total titles:" + currencies.size());
 
-			for (WebElement element : elements) {
+			for (WebElement element : currencies) {
 				String currentElementText = element.getText();
 				System.out.println("Title:" + currentElementText);
 
@@ -86,7 +86,7 @@ public class ReusableMethods {
 				if (currentWebElementString != null && currentWebElementString.equals(elementNeedToSelect)) {
 
 					System.out.println("Element|" + currentWebElementString + " Is Selected");
-					currentWebElement.click();
+					ReusableMethods.waitAndClick(currentWebElement);
 					break;
 				}
 			}

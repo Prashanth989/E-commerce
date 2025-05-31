@@ -9,7 +9,7 @@ public final class HomeScreenTest extends BaseTest {
 
 	HomePage afterLogin;
 
-	@Test(priority = 7)
+	@Test(priority = 10)
 	public void navigationTestToProductDetailsPage() {
 		afterLogin = new HomePage();
 		String productName = afterLogin.selectProductFromFeaturedCollection();

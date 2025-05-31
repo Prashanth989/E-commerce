@@ -23,12 +23,34 @@ public final class LunchPageTest extends BaseTest {
 	}
 
 	@Test(priority = 2)
+	public void isCurrencyDropdownShown() {
+		boolean isExist = beforeLogin.isCurrencyDropdownDisplaying();
+		Assert.assertTrue(isExist, "Currency dropdown is not shown in the launch Page");
+	}
+
+	@Test(priority = 3)
+	public void isCurrenciesAreShown() {
+		beforeLogin.selectCurrency();
+
+		List<String> currencies = beforeLogin.getCurrencies();
+		Assert.assertNotNull(currencies, "Currencies are not Shown");
+
+		beforeLogin.selectCurrency();
+	}
+
+	@Test(priority = 4)
+	public void gadgetsAreShown() {
+		List<String> gadgets = beforeLogin.getGadgetsTitles();
+		Assert.assertNotNull(gadgets, "gadgets are not Shown");
+	}
+
+	@Test(priority = 5)
 	public void launchScreenMyAccountDropdownOptionsTitleTest() {
 		List<String> dropdownTitles = beforeLogin.getMyAccountDropdownElementsText();
 		Assert.assertNotNull(dropdownTitles, "My Account dropdown titles are null");
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 6)
 	public void loginScreenNavigationTest() {
 		beforeLogin.goTo();
 		String loginScreenTitle = ReusableMethods.getTitle();

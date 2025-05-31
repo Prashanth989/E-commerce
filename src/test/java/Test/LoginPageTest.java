@@ -13,7 +13,7 @@ public final class LoginPageTest extends BaseTest {
 
 	LoginPage login;
 
-	@Test(priority = 4)
+	@Test(priority = 7)
 	public void loginTest() throws IOException, InterruptedException {
 		login = new LoginPage();
 

@@ -12,7 +12,7 @@ public final class ProductDetailsTest extends BaseTest {
 
 	ProductDetails details;
 
-	@Test(priority = 8)
+	@Test(priority = 11)
 	public void productImageLinksStatusCodeTest() throws IOException {
 		details = new ProductDetails();
 		boolean appResult = details.isProductLinkSourceEmpty();

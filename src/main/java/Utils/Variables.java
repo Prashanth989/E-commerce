@@ -1,5 +1,8 @@
 package Utils;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Variables {
 
 	public static String lunchTitle = "Your Store";
@@ -13,4 +16,7 @@ public class Variables {
 	public static String extentReportTitle = "Automation report";
 	public static String applicationName = "Naveen Automation Open Cart";
 	public static String locProject = System.getProperty("user.dir");
+	
+	
+	public static ArrayList<String> currencies = new  ArrayList<String>(Arrays.asList("['€ Euro', '£ Pound Sterling', '$ US Dollar']"));
 }
