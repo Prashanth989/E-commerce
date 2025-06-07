@@ -18,9 +18,9 @@ public final class HomePage {
 		PageFactory.initElements(DriverFactory.getDriver(), this);
 	}
 
-	public String selectProductFromFeaturedCollection() {
+	public void selectProductFromFeaturedCollection() {
 		String productToBeSelect = "iPhone";
 		ReusableMethods.selectWebElementFromList(featuredCollection, productToBeSelect);
-		return ReusableMethods.getTitle();
+		
 	}
 }

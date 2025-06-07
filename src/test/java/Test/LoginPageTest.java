@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import Base.DriverFactory;
 import PageFactory.LoginPage;
 import Utils.ReadPropertiesFile;
 import Utils.ReusableMethods;
@@ -20,11 +21,13 @@ public final class LoginPageTest extends BaseTest {
 		String username = ReadPropertiesFile.getValve("userName");
 		String pin = ReadPropertiesFile.getValve("userPin");
 
-		String myAccountTitle = login.login(username, pin);
+		login.login(username, pin);
 
+		String loginTitle = DriverFactory.getDriver().getTitle();
+		
 		ReusableMethods.log(
-				"----- Logging in with " + username + " " + pin + " Title of the dashboard screen " + myAccountTitle);
-		Assert.assertEquals(myAccountTitle, "My Account",
+				"----- Logging in with " + username + " " + pin + " Title of the dashboard screen " + loginTitle);
+		Assert.assertEquals(loginTitle, "My Account",
 				"My Account title is not matched, Redirection to My Account Page is failed");
 	}
 }

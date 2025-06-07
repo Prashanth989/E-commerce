@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import Base.BrowserFactory;
+
 import Base.DriverFactory;
 import Utils.ReusableMethods;
 
@@ -28,8 +28,8 @@ public final class MyAccountPage {
 		return ReusableMethods.fetchTextFromList(myAccountSectionLinks);
 	}
 
-	public boolean navigateToHomeScreenOnSelectingLogo() {
+	public void navigateToHomeScreenOnSelectingLogo() {
 		ReusableMethods.waitAndClick(logo);
-		return BrowserFactory.driver.getCurrentUrl().contains("/home");
+		
 	}
 }

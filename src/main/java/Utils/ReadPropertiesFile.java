@@ -14,7 +14,7 @@ public class ReadPropertiesFile {
 			prop = new Properties();
 
 			FileInputStream input = new FileInputStream(
-					Variables.locProject + "/src/main/resources/Application.config");
+					Variables.getProjectLoc() + "/src/main/resources/Application.config");
 
 			prop.load(input);
 			valve = prop.getProperty(key);

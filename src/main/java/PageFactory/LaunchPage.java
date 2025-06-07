@@ -43,11 +43,6 @@ public final class LaunchPage {
 		ReusableMethods.waitAndClick(currencyDropdown);
 	}
 
-	public String getLaunchScreenTitle() {
-		String launchScreenTitle = ReusableMethods.getTitle();
-		return launchScreenTitle;
-	}
-
 	public List<String> getGadgetsTitles() {
 		List<String> gadgets = ReusableMethods.fetchTextFromList(this.gadgets);
 		return gadgets;

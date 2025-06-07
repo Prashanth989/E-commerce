@@ -3,6 +3,7 @@ package Test;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import Base.DriverFactory;
 import PageFactory.HomePage;
 
 public final class HomeScreenTest extends BaseTest {
@@ -12,8 +13,9 @@ public final class HomeScreenTest extends BaseTest {
 	@Test(priority = 11)
 	public void navigationTestToProductDetailsPage() {
 		afterLogin = new HomePage();
-		String productName = afterLogin.selectProductFromFeaturedCollection();
-		Assert.assertEquals(productName, "iPhone",
+		afterLogin.selectProductFromFeaturedCollection();
+		String productTitle = DriverFactory.getDriver().getTitle();
+		Assert.assertEquals(productTitle, "iPhone",
 				"Product name is not matched, Navigation test to Selected Product deatils Page is failed");
 	}
 }
