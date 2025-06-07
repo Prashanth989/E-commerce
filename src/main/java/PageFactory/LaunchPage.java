@@ -17,12 +17,6 @@ public final class LaunchPage {
 	@FindBy(xpath = "//div[@class='btn-group open']//li")
 	List<WebElement> currencies;
 
-	@FindBy(xpath = "//div[@id='top-links']//span[@class='hidden-xs hidden-sm hidden-md']")
-	List<WebElement> headerItems;
-
-	@FindBy(xpath = "//ul[@class='dropdown-menu dropdown-menu-right']//li")
-	List<WebElement> myAccountDropdownElements;
-
 	@FindBy(xpath = "//ul[@class='nav navbar-nav']/li")
 	List<WebElement> gadgets;
 
@@ -35,6 +29,7 @@ public final class LaunchPage {
 	}
 
 	public List<String> getCurrencies() {
+		selectCurrency();
 		List<String> currencies = ReusableMethods.fetchTextFromList(this.currencies);
 		return currencies;
 	}
@@ -48,25 +43,8 @@ public final class LaunchPage {
 		return gadgets;
 	}
 
-	public void selectItemFromHeader(String headerItem) {
+	
 
-		ReusableMethods.selectWebElementFromList(headerItems, headerItem);
-	}
 
-	public void goTo(String dropdownElement) {
-
-		ReusableMethods.selectWebElementFromList(this.myAccountDropdownElements, dropdownElement);
-	}
-
-	public List<String> getHeaderItemsTexts() {
-		List<String> headerItems = ReusableMethods.fetchTextFromList(this.headerItems);
-		return headerItems;
-	}
-
-	public List<String> getMyAccountDropdownElementsText() {
-
-		return ReusableMethods.fetchTextFromList(this.myAccountDropdownElements);
-
-	}
 
 }

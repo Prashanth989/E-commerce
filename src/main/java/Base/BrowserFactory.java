@@ -59,7 +59,7 @@ public class BrowserFactory {
 		}
 		DriverFactory.setDriver(driver);
 		DriverFactory.getDriver().manage().window().maximize();
-		System.out.println("Driver: Thread: " + DriverFactory.getDriver() + " Is Running");
+		System.out.println("Driver: Thread: " + DriverFactory.getDriver() + " : " + Thread.currentThread().getId() +" Is Running");
 		DriverFactory.getDriver().get(ReadPropertiesFile.getValve("applicationUrl"));
 		DriverFactory.getDriver().manage().timeouts()
 		.pageLoadTimeout(Duration.ofSeconds(Variables.pageLoadTimeOut));
@@ -69,6 +69,8 @@ public class BrowserFactory {
 
 	public static void quitBrowser() {
 		if (DriverFactory.getDriver()!=null) {
+			System.out.println("Driver: Thread: " + DriverFactory.getDriver() + " : " + Thread.currentThread().getId() +" Is Closing");
+
 			DriverFactory.remove();
 		}
 	}

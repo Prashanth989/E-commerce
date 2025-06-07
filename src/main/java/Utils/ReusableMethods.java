@@ -93,7 +93,7 @@ public class ReusableMethods {
 		}
 
 		catch (Exception e) {
-			ReusableMethods.log("Title of the element to be select is found null: " + e.getMessage());
+			ReusableMethods.log("Not able to Select the element, due to the exception: " + e.getMessage());
 			e.printStackTrace();
 		}
 

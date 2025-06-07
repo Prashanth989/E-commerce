@@ -16,16 +16,4 @@
       </class> <!-- Test.LoginPageTest -->
     </classes>
   </test> <!-- Selenium Chrome test(failed) -->
-  <test thread-count="2" parallel="tests" name="Selenium Internet Explorer test(failed)">
-    <parameter name="Browser" value="Internet Explorer"/>
-    <classes>
-      <class name="Test.LoginPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="launchBrowser"/>
-          <include name="loginTest"/>
-        </methods>
-      </class> <!-- Test.LoginPageTest -->
-    </classes>
-  </test> <!-- Selenium Internet Explorer test(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

@@ -2,6 +2,8 @@ package Test;
 
 import org.testng.annotations.Test;
 
+import Base.DriverFactory;
+import PageFactory.HeaderCategories;
 import PageFactory.LaunchPage;
 import Utils.ReusableMethods;
 import Utils.Variables;
@@ -12,14 +14,15 @@ import org.testng.Assert;
 
 public final class LunchPageTest extends BaseTest {
 
+	HeaderCategories modules;
 	LaunchPage beforeLogin;
 
 	@Test(priority = 1)
 	public void launchScreenTitleTest() {
 		beforeLogin = new LaunchPage();
-		//String launchTitle = DriverFactory.getDriver().getTitle();
-		//Assert.assertEquals(launchTitle, Variables.lunchTitle,
-				//"Launch Page title is not matched, Url failed to land on the launch page");
+		String launchTitle = DriverFactory.getDriver().getTitle();
+		Assert.assertEquals(launchTitle, Variables.lunchTitle,
+				"Launch Page title is not matched, Url failed to land on the launch page");
 	}
 
 	@Test(priority = 2)
@@ -30,7 +33,7 @@ public final class LunchPageTest extends BaseTest {
 
 	@Test(priority = 3)
 	public void isCurrenciesAreShown() {
-		beforeLogin.selectCurrency();
+
 
 		List<String> currencies = beforeLogin.getCurrencies();
 		Assert.assertNotNull(currencies, "Currencies are not Shown");
@@ -40,8 +43,9 @@ public final class LunchPageTest extends BaseTest {
 
 	@Test(priority = 4)
 	public void isTopItemsAreShown() {
-		List<String> headerItems = beforeLogin.getHeaderItemsTexts();
-		Assert.assertNotNull(headerItems, "Currencies are not Shown");
+		modules = new HeaderCategories();
+		List<String> headerItems = modules.getHeaderItemsTexts();
+		Assert.assertNotNull(headerItems, "Header Items were not Shown");
 	}
 
 	@Test(priority = 5)
@@ -52,14 +56,14 @@ public final class LunchPageTest extends BaseTest {
 
 	@Test(priority = 6)
 	public void launchScreenMyAccountDropdownOptionsTitleTest() {
-		beforeLogin.selectItemFromHeader("My Account");
-		List<String> dropdownTitles = beforeLogin.getMyAccountDropdownElementsText();
+		modules.selectHeaderItem("My Account");
+		List<String> dropdownTitles = modules.getMyAccountDropdownElementsText();
 		Assert.assertNotNull(dropdownTitles, "My Account dropdown titles are null");
 	}
 
 	@Test(priority = 7)
 	public void loginScreenNavigationTest() {
-		beforeLogin.goTo("Login");
+		modules.goToLogin("Login");
 		String loginScreenTitle = ReusableMethods.getTitle();
 		Assert.assertEquals(loginScreenTitle, Variables.loginScreenTitle,
 				"Login page title is not matched, Redirection to login screen is failed");
