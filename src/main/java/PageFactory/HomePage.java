@@ -20,7 +20,7 @@ public final class HomePage {
 
 	public void selectProductFromFeaturedCollection() {
 		String productToBeSelect = "iPhone";
-		ReusableMethods.selectWebElementFromList(featuredCollection, productToBeSelect);
+		ReusableMethods.selectElementFromList(featuredCollection, productToBeSelect);
 		
 	}
 }

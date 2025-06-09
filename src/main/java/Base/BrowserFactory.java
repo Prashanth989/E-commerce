@@ -24,7 +24,7 @@ public class BrowserFactory {
 		try {
 
 			System.out.println(Thread.currentThread().getId() + ":" + BrowserFactory.driver);
-			if (DriverFactory.getDriver()==null) {
+			if (DriverFactory.getDriver() == null) {
 				switch (browserToLaunch) {
 				case "Chrome":
 					WebDriverManager.chromedriver().setup();
@@ -48,7 +48,7 @@ public class BrowserFactory {
 					break;
 
 				default:
-					System.out.println("No browser Parameter is Supplied to initialise the browser");
+					throw new Exception("No browser Parameter is given to launch the browser");
 				}
 
 			}
@@ -59,7 +59,8 @@ public class BrowserFactory {
 		}
 		DriverFactory.setDriver(driver);
 		DriverFactory.getDriver().manage().window().maximize();
-		System.out.println("Driver: Thread: " + DriverFactory.getDriver() + " : " + Thread.currentThread().getId() +" Is Running");
+		System.out.println("Thread: " + Thread.currentThread().getId() +" Is Running in " + DriverFactory.getDriver());
+		System.out.println("---------- Application Url: " + ReadPropertiesFile.getValve("applicationUrl") + " Is launching ----------");
 		DriverFactory.getDriver().get(ReadPropertiesFile.getValve("applicationUrl"));
 		DriverFactory.getDriver().manage().timeouts()
 		.pageLoadTimeout(Duration.ofSeconds(Variables.pageLoadTimeOut));

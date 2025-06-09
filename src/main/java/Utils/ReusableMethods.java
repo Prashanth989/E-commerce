@@ -77,7 +77,7 @@ public class ReusableMethods {
 
 	}
 
-	public static void selectWebElementFromList(List<WebElement> allElement, String elementNeedToSelect) {
+	public static void selectElementFromList(List<WebElement> allElement, String elementNeedToSelect) {
 
 		try {
 
@@ -93,7 +93,7 @@ public class ReusableMethods {
 		}
 
 		catch (Exception e) {
-			ReusableMethods.log("Not able to Select the element, due to the exception: " + e.getMessage());
+			ReusableMethods.log("Not able to Select the element, due to the exception " + e.getMessage());
 			e.printStackTrace();
 		}
 

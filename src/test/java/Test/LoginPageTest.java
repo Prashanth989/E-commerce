@@ -6,14 +6,17 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Base.DriverFactory;
+import PageFactory.HeaderCategories;
 import PageFactory.LoginPage;
 import Utils.ReadPropertiesFile;
 import Utils.ReusableMethods;
 
 public final class LoginPageTest extends BaseTest {
 
+	HeaderCategories categories;
 	LoginPage login;
-
+	
+	
 	@Test(priority = 8)
 	public void loginTest() throws IOException, InterruptedException {
 		login = new LoginPage();

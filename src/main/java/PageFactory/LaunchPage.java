@@ -24,6 +24,11 @@ public final class LaunchPage {
 		PageFactory.initElements(DriverFactory.getDriver(), this);
 	}
 
+	public String getLaunchTitle() {
+		String launchTitle = ReusableMethods.getTitle();
+		return launchTitle;
+	}
+
 	public boolean isCurrencyDropdownDisplaying() {
 		return this.currencyDropdown.isDisplayed();
 	}
@@ -42,9 +47,5 @@ public final class LaunchPage {
 		List<String> gadgets = ReusableMethods.fetchTextFromList(this.gadgets);
 		return gadgets;
 	}
-
-	
-
-
 
 }

@@ -2,10 +2,8 @@ package Test;
 
 import org.testng.annotations.Test;
 
-import Base.DriverFactory;
 import PageFactory.HeaderCategories;
 import PageFactory.LaunchPage;
-import Utils.ReusableMethods;
 import Utils.Variables;
 
 import java.util.List;
@@ -14,13 +12,13 @@ import org.testng.Assert;
 
 public final class LunchPageTest extends BaseTest {
 
-	HeaderCategories modules;
+	HeaderCategories categories;
 	LaunchPage beforeLogin;
 
 	@Test(priority = 1)
 	public void launchScreenTitleTest() {
 		beforeLogin = new LaunchPage();
-		String launchTitle = DriverFactory.getDriver().getTitle();
+		String launchTitle = beforeLogin.getLaunchTitle();
 		Assert.assertEquals(launchTitle, Variables.lunchTitle,
 				"Launch Page title is not matched, Url failed to land on the launch page");
 	}
@@ -43,8 +41,8 @@ public final class LunchPageTest extends BaseTest {
 
 	@Test(priority = 4)
 	public void isTopItemsAreShown() {
-		modules = new HeaderCategories();
-		List<String> headerItems = modules.getHeaderItemsTexts();
+		categories = new HeaderCategories();
+		List<String> headerItems = categories.getHeaderItemsTexts();
 		Assert.assertNotNull(headerItems, "Header Items were not Shown");
 	}
 
@@ -56,17 +54,19 @@ public final class LunchPageTest extends BaseTest {
 
 	@Test(priority = 6)
 	public void launchScreenMyAccountDropdownOptionsTitleTest() {
-		modules.selectHeaderItem("My Account");
-		List<String> dropdownTitles = modules.getMyAccountDropdownElementsText();
+		categories.selectHeaderItem("My Account");
+		List<String> dropdownTitles = categories.getMyAccountDropdownElementsText();
 		Assert.assertNotNull(dropdownTitles, "My Account dropdown titles are null");
 	}
 
+
 	@Test(priority = 7)
 	public void loginScreenNavigationTest() {
-		modules.goToLogin("Login");
-		String loginScreenTitle = ReusableMethods.getTitle();
-		Assert.assertEquals(loginScreenTitle, Variables.loginScreenTitle,
+		String link = categories.goToLogin("Login");
+		boolean isNavigating = link.contains("/login");
+		Assert.assertTrue(isNavigating,
 				"Login page title is not matched, Redirection to login screen is failed");
 
 	}
+	
 }

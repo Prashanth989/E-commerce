@@ -2,12 +2,162 @@
 <testng-results ignored="0" total="36" passed="35" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-07T16:20:56 IST" name="Suite1" finished-at="2025-06-07T16:21:23 IST" duration-ms="27347">
+  <suite started-at="2025-06-09T13:25:26 IST" name="Suite1" finished-at="2025-06-09T13:26:02 IST" duration-ms="35826">
     <groups>
     </groups>
-    <test started-at="2025-06-07T16:20:56 IST" name="Selenium Chrome test" finished-at="2025-06-07T16:21:11 IST" duration-ms="15469">
+    <test started-at="2025-06-09T13:25:26 IST" name="Selenium Chrome test" finished-at="2025-06-09T13:25:45 IST" duration-ms="19149">
       <class name="Test.LoginPageTest">
-        <test-method signature="loginTest()[pri:8, instance:Test.LoginPageTest@69c81773]" started-at="2025-06-07T16:21:04 IST" name="loginTest" finished-at="2025-06-07T16:21:04 IST" duration-ms="461" status="FAIL">
+        <test-method signature="loginTest()[pri:8, instance:Test.LoginPageTest@69c81773]" started-at="2025-06-09T13:25:36 IST" name="loginTest" finished-at="2025-06-09T13:25:37 IST" duration-ms="1641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- Test.LoginPageTest -->
+      <class name="Test.HomeScreenTest">
+        <test-method signature="navigationTestToProductDetailsPage()[pri:11, instance:Test.HomeScreenTest@7e990ed7]" started-at="2025-06-09T13:25:39 IST" name="navigationTestToProductDetailsPage" finished-at="2025-06-09T13:25:42 IST" duration-ms="2175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigationTestToProductDetailsPage -->
+      </class> <!-- Test.HomeScreenTest -->
+      <class name="Test.MyAccountScreenTest">
+        <test-method signature="myAccountSectionLinksTitleTest()[pri:9, instance:Test.MyAccountScreenTest@4d14b6c2]" started-at="2025-06-09T13:25:37 IST" name="myAccountSectionLinksTitleTest" finished-at="2025-06-09T13:25:39 IST" duration-ms="1240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myAccountSectionLinksTitleTest -->
+        <test-method signature="profileScreenToHomeScreenNavigationTest()[pri:10, instance:Test.MyAccountScreenTest@4d14b6c2]" started-at="2025-06-09T13:25:39 IST" name="profileScreenToHomeScreenNavigationTest" finished-at="2025-06-09T13:25:39 IST" duration-ms="686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profileScreenToHomeScreenNavigationTest -->
+      </class> <!-- Test.MyAccountScreenTest -->
+      <class name="Test.ProductDetailsTest">
+        <test-method signature="productImageLinksStatusCodeTest()[pri:12, instance:Test.ProductDetailsTest@c05fddc]" started-at="2025-06-09T13:25:42 IST" name="productImageLinksStatusCodeTest" finished-at="2025-06-09T13:25:45 IST" duration-ms="3463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productImageLinksStatusCodeTest -->
+      </class> <!-- Test.ProductDetailsTest -->
+      <class name="Test.LunchPageTest">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:Test.LunchPageTest@6a8658ff]" started-at="2025-06-09T13:25:27 IST" name="launchBrowser" finished-at="2025-06-09T13:25:32 IST" duration-ms="4822" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="launchScreenTitleTest()[pri:1, instance:Test.LunchPageTest@6a8658ff]" started-at="2025-06-09T13:25:32 IST" name="launchScreenTitleTest" finished-at="2025-06-09T13:25:33 IST" duration-ms="683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchScreenTitleTest -->
+        <test-method signature="isCurrencyDropdownShown()[pri:2, instance:Test.LunchPageTest@6a8658ff]" started-at="2025-06-09T13:25:33 IST" name="isCurrencyDropdownShown" finished-at="2025-06-09T13:25:34 IST" duration-ms="778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isCurrencyDropdownShown -->
+        <test-method signature="isCurrenciesAreShown()[pri:3, instance:Test.LunchPageTest@6a8658ff]" started-at="2025-06-09T13:25:34 IST" name="isCurrenciesAreShown" finished-at="2025-06-09T13:25:35 IST" duration-ms="1182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isCurrenciesAreShown -->
+        <test-method signature="isTopItemsAreShown()[pri:4, instance:Test.LunchPageTest@6a8658ff]" started-at="2025-06-09T13:25:35 IST" name="isTopItemsAreShown" finished-at="2025-06-09T13:25:35 IST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isTopItemsAreShown -->
+        <test-method signature="gadgetsAreShown()[pri:5, instance:Test.LunchPageTest@6a8658ff]" started-at="2025-06-09T13:25:35 IST" name="gadgetsAreShown" finished-at="2025-06-09T13:25:35 IST" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gadgetsAreShown -->
+        <test-method signature="launchScreenMyAccountDropdownOptionsTitleTest()[pri:6, instance:Test.LunchPageTest@6a8658ff]" started-at="2025-06-09T13:25:35 IST" name="launchScreenMyAccountDropdownOptionsTitleTest" finished-at="2025-06-09T13:25:35 IST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchScreenMyAccountDropdownOptionsTitleTest -->
+        <test-method signature="loginScreenNavigationTest()[pri:7, instance:Test.LunchPageTest@6a8658ff]" started-at="2025-06-09T13:25:35 IST" name="loginScreenNavigationTest" finished-at="2025-06-09T13:25:36 IST" duration-ms="613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginScreenNavigationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.LunchPageTest@6a8658ff]" started-at="2025-06-09T13:25:45 IST" name="tearDown" finished-at="2025-06-09T13:25:45 IST" duration-ms="469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Test.LunchPageTest -->
+    </test> <!-- Selenium Chrome test -->
+    <test started-at="2025-06-09T13:25:26 IST" name="Selenium firefox test" finished-at="2025-06-09T13:25:53 IST" duration-ms="26461">
+      <class name="Test.LoginPageTest">
+        <test-method signature="loginTest()[pri:8, instance:Test.LoginPageTest@7486b455]" started-at="2025-06-09T13:25:44 IST" name="loginTest" finished-at="2025-06-09T13:25:45 IST" duration-ms="1149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- Test.LoginPageTest -->
+      <class name="Test.HomeScreenTest">
+        <test-method signature="navigationTestToProductDetailsPage()[pri:11, instance:Test.HomeScreenTest@5d908d47]" started-at="2025-06-09T13:25:47 IST" name="navigationTestToProductDetailsPage" finished-at="2025-06-09T13:25:48 IST" duration-ms="1403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigationTestToProductDetailsPage -->
+      </class> <!-- Test.HomeScreenTest -->
+      <class name="Test.MyAccountScreenTest">
+        <test-method signature="myAccountSectionLinksTitleTest()[pri:9, instance:Test.MyAccountScreenTest@660acfb]" started-at="2025-06-09T13:25:45 IST" name="myAccountSectionLinksTitleTest" finished-at="2025-06-09T13:25:46 IST" duration-ms="571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myAccountSectionLinksTitleTest -->
+        <test-method signature="profileScreenToHomeScreenNavigationTest()[pri:10, instance:Test.MyAccountScreenTest@660acfb]" started-at="2025-06-09T13:25:46 IST" name="profileScreenToHomeScreenNavigationTest" finished-at="2025-06-09T13:25:47 IST" duration-ms="811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profileScreenToHomeScreenNavigationTest -->
+      </class> <!-- Test.MyAccountScreenTest -->
+      <class name="Test.ProductDetailsTest">
+        <test-method signature="productImageLinksStatusCodeTest()[pri:12, instance:Test.ProductDetailsTest@5efa40fe]" started-at="2025-06-09T13:25:48 IST" name="productImageLinksStatusCodeTest" finished-at="2025-06-09T13:25:50 IST" duration-ms="1902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productImageLinksStatusCodeTest -->
+      </class> <!-- Test.ProductDetailsTest -->
+      <class name="Test.LunchPageTest">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:Test.LunchPageTest@23941fb4]" started-at="2025-06-09T13:25:27 IST" name="launchBrowser" finished-at="2025-06-09T13:25:41 IST" duration-ms="14167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="launchScreenTitleTest()[pri:1, instance:Test.LunchPageTest@23941fb4]" started-at="2025-06-09T13:25:41 IST" name="launchScreenTitleTest" finished-at="2025-06-09T13:25:41 IST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchScreenTitleTest -->
+        <test-method signature="isCurrencyDropdownShown()[pri:2, instance:Test.LunchPageTest@23941fb4]" started-at="2025-06-09T13:25:41 IST" name="isCurrencyDropdownShown" finished-at="2025-06-09T13:25:42 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isCurrencyDropdownShown -->
+        <test-method signature="isCurrenciesAreShown()[pri:3, instance:Test.LunchPageTest@23941fb4]" started-at="2025-06-09T13:25:42 IST" name="isCurrenciesAreShown" finished-at="2025-06-09T13:25:42 IST" duration-ms="891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isCurrenciesAreShown -->
+        <test-method signature="isTopItemsAreShown()[pri:4, instance:Test.LunchPageTest@23941fb4]" started-at="2025-06-09T13:25:42 IST" name="isTopItemsAreShown" finished-at="2025-06-09T13:25:43 IST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isTopItemsAreShown -->
+        <test-method signature="gadgetsAreShown()[pri:5, instance:Test.LunchPageTest@23941fb4]" started-at="2025-06-09T13:25:43 IST" name="gadgetsAreShown" finished-at="2025-06-09T13:25:43 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gadgetsAreShown -->
+        <test-method signature="launchScreenMyAccountDropdownOptionsTitleTest()[pri:6, instance:Test.LunchPageTest@23941fb4]" started-at="2025-06-09T13:25:43 IST" name="launchScreenMyAccountDropdownOptionsTitleTest" finished-at="2025-06-09T13:25:43 IST" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchScreenMyAccountDropdownOptionsTitleTest -->
+        <test-method signature="loginScreenNavigationTest()[pri:7, instance:Test.LunchPageTest@23941fb4]" started-at="2025-06-09T13:25:43 IST" name="loginScreenNavigationTest" finished-at="2025-06-09T13:25:44 IST" duration-ms="948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginScreenNavigationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.LunchPageTest@23941fb4]" started-at="2025-06-09T13:25:50 IST" name="tearDown" finished-at="2025-06-09T13:25:53 IST" duration-ms="2806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Test.LunchPageTest -->
+    </test> <!-- Selenium firefox test -->
+    <test started-at="2025-06-09T13:25:47 IST" name="Selenium Internet Explorer test" finished-at="2025-06-09T13:26:02 IST" duration-ms="15537">
+      <class name="Test.LoginPageTest">
+        <test-method signature="loginTest()[pri:8, instance:Test.LoginPageTest@45385f75]" started-at="2025-06-09T13:25:54 IST" name="loginTest" finished-at="2025-06-09T13:25:54 IST" duration-ms="319" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[My Account title is not matched, Redirection to My Account Page is failed expected [My Account] but found [Account Login]]]>
@@ -19,7 +169,7 @@ at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
-at Test.LoginPageTest.loginTest(LoginPageTest.java:30)
+at Test.LoginPageTest.loginTest(LoginPageTest.java:33)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -48,179 +198,29 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
         </test-method> <!-- loginTest -->
       </class> <!-- Test.LoginPageTest -->
       <class name="Test.HomeScreenTest">
-        <test-method signature="navigationTestToProductDetailsPage()[pri:11, instance:Test.HomeScreenTest@7e990ed7]" started-at="2025-06-07T16:21:07 IST" name="navigationTestToProductDetailsPage" finished-at="2025-06-07T16:21:08 IST" duration-ms="1576" status="PASS">
+        <test-method signature="navigationTestToProductDetailsPage()[pri:11, instance:Test.HomeScreenTest@2d29b4ee]" started-at="2025-06-09T13:25:56 IST" name="navigationTestToProductDetailsPage" finished-at="2025-06-09T13:25:57 IST" duration-ms="1273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigationTestToProductDetailsPage -->
       </class> <!-- Test.HomeScreenTest -->
       <class name="Test.MyAccountScreenTest">
-        <test-method signature="myAccountSectionLinksTitleTest()[pri:9, instance:Test.MyAccountScreenTest@4d14b6c2]" started-at="2025-06-07T16:21:04 IST" name="myAccountSectionLinksTitleTest" finished-at="2025-06-07T16:21:06 IST" duration-ms="1614" status="PASS">
+        <test-method signature="myAccountSectionLinksTitleTest()[pri:9, instance:Test.MyAccountScreenTest@49c90a9c]" started-at="2025-06-09T13:25:54 IST" name="myAccountSectionLinksTitleTest" finished-at="2025-06-09T13:25:55 IST" duration-ms="1268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- myAccountSectionLinksTitleTest -->
-        <test-method signature="profileScreenToHomeScreenNavigationTest()[pri:10, instance:Test.MyAccountScreenTest@4d14b6c2]" started-at="2025-06-07T16:21:06 IST" name="profileScreenToHomeScreenNavigationTest" finished-at="2025-06-07T16:21:07 IST" duration-ms="787" status="PASS">
+        <test-method signature="profileScreenToHomeScreenNavigationTest()[pri:10, instance:Test.MyAccountScreenTest@49c90a9c]" started-at="2025-06-09T13:25:55 IST" name="profileScreenToHomeScreenNavigationTest" finished-at="2025-06-09T13:25:56 IST" duration-ms="691" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profileScreenToHomeScreenNavigationTest -->
       </class> <!-- Test.MyAccountScreenTest -->
       <class name="Test.ProductDetailsTest">
-        <test-method signature="productImageLinksStatusCodeTest()[pri:12, instance:Test.ProductDetailsTest@c05fddc]" started-at="2025-06-07T16:21:08 IST" name="productImageLinksStatusCodeTest" finished-at="2025-06-07T16:21:11 IST" duration-ms="2420" status="PASS">
+        <test-method signature="productImageLinksStatusCodeTest()[pri:12, instance:Test.ProductDetailsTest@69ee81fc]" started-at="2025-06-09T13:25:57 IST" name="productImageLinksStatusCodeTest" finished-at="2025-06-09T13:26:01 IST" duration-ms="3170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productImageLinksStatusCodeTest -->
       </class> <!-- Test.ProductDetailsTest -->
       <class name="Test.LunchPageTest">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:Test.LunchPageTest@6a8658ff]" started-at="2025-06-07T16:20:56 IST" name="launchBrowser" finished-at="2025-06-07T16:21:02 IST" duration-ms="6091" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="launchScreenTitleTest()[pri:1, instance:Test.LunchPageTest@6a8658ff]" started-at="2025-06-07T16:21:02 IST" name="launchScreenTitleTest" finished-at="2025-06-07T16:21:02 IST" duration-ms="52" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchScreenTitleTest -->
-        <test-method signature="isCurrencyDropdownShown()[pri:2, instance:Test.LunchPageTest@6a8658ff]" started-at="2025-06-07T16:21:02 IST" name="isCurrencyDropdownShown" finished-at="2025-06-07T16:21:03 IST" duration-ms="50" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isCurrencyDropdownShown -->
-        <test-method signature="isCurrenciesAreShown()[pri:3, instance:Test.LunchPageTest@6a8658ff]" started-at="2025-06-07T16:21:03 IST" name="isCurrenciesAreShown" finished-at="2025-06-07T16:21:03 IST" duration-ms="309" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isCurrenciesAreShown -->
-        <test-method signature="isTopItemsAreShown()[pri:4, instance:Test.LunchPageTest@6a8658ff]" started-at="2025-06-07T16:21:03 IST" name="isTopItemsAreShown" finished-at="2025-06-07T16:21:03 IST" duration-ms="110" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isTopItemsAreShown -->
-        <test-method signature="gadgetsAreShown()[pri:5, instance:Test.LunchPageTest@6a8658ff]" started-at="2025-06-07T16:21:03 IST" name="gadgetsAreShown" finished-at="2025-06-07T16:21:03 IST" duration-ms="164" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gadgetsAreShown -->
-        <test-method signature="launchScreenMyAccountDropdownOptionsTitleTest()[pri:6, instance:Test.LunchPageTest@6a8658ff]" started-at="2025-06-07T16:21:03 IST" name="launchScreenMyAccountDropdownOptionsTitleTest" finished-at="2025-06-07T16:21:03 IST" duration-ms="173" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchScreenMyAccountDropdownOptionsTitleTest -->
-        <test-method signature="loginScreenNavigationTest()[pri:7, instance:Test.LunchPageTest@6a8658ff]" started-at="2025-06-07T16:21:03 IST" name="loginScreenNavigationTest" finished-at="2025-06-07T16:21:04 IST" duration-ms="627" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginScreenNavigationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.LunchPageTest@6a8658ff]" started-at="2025-06-07T16:21:11 IST" name="tearDown" finished-at="2025-06-07T16:21:11 IST" duration-ms="582" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Test.LunchPageTest -->
-    </test> <!-- Selenium Chrome test -->
-    <test started-at="2025-06-07T16:20:56 IST" name="Selenium firefox test" finished-at="2025-06-07T16:21:13 IST" duration-ms="17496">
-      <class name="Test.LoginPageTest">
-        <test-method signature="loginTest()[pri:8, instance:Test.LoginPageTest@7486b455]" started-at="2025-06-07T16:21:08 IST" name="loginTest" finished-at="2025-06-07T16:21:08 IST" duration-ms="539" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- Test.LoginPageTest -->
-      <class name="Test.HomeScreenTest">
-        <test-method signature="navigationTestToProductDetailsPage()[pri:11, instance:Test.HomeScreenTest@5d908d47]" started-at="2025-06-07T16:21:09 IST" name="navigationTestToProductDetailsPage" finished-at="2025-06-07T16:21:09 IST" duration-ms="516" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigationTestToProductDetailsPage -->
-      </class> <!-- Test.HomeScreenTest -->
-      <class name="Test.MyAccountScreenTest">
-        <test-method signature="myAccountSectionLinksTitleTest()[pri:9, instance:Test.MyAccountScreenTest@660acfb]" started-at="2025-06-07T16:21:08 IST" name="myAccountSectionLinksTitleTest" finished-at="2025-06-07T16:21:09 IST" duration-ms="249" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- myAccountSectionLinksTitleTest -->
-        <test-method signature="profileScreenToHomeScreenNavigationTest()[pri:10, instance:Test.MyAccountScreenTest@660acfb]" started-at="2025-06-07T16:21:09 IST" name="profileScreenToHomeScreenNavigationTest" finished-at="2025-06-07T16:21:09 IST" duration-ms="357" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- profileScreenToHomeScreenNavigationTest -->
-      </class> <!-- Test.MyAccountScreenTest -->
-      <class name="Test.ProductDetailsTest">
-        <test-method signature="productImageLinksStatusCodeTest()[pri:12, instance:Test.ProductDetailsTest@5efa40fe]" started-at="2025-06-07T16:21:09 IST" name="productImageLinksStatusCodeTest" finished-at="2025-06-07T16:21:12 IST" duration-ms="2372" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productImageLinksStatusCodeTest -->
-      </class> <!-- Test.ProductDetailsTest -->
-      <class name="Test.LunchPageTest">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:Test.LunchPageTest@23941fb4]" started-at="2025-06-07T16:20:56 IST" name="launchBrowser" finished-at="2025-06-07T16:21:06 IST" duration-ms="9542" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="launchScreenTitleTest()[pri:1, instance:Test.LunchPageTest@23941fb4]" started-at="2025-06-07T16:21:06 IST" name="launchScreenTitleTest" finished-at="2025-06-07T16:21:06 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchScreenTitleTest -->
-        <test-method signature="isCurrencyDropdownShown()[pri:2, instance:Test.LunchPageTest@23941fb4]" started-at="2025-06-07T16:21:06 IST" name="isCurrencyDropdownShown" finished-at="2025-06-07T16:21:06 IST" duration-ms="82" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isCurrencyDropdownShown -->
-        <test-method signature="isCurrenciesAreShown()[pri:3, instance:Test.LunchPageTest@23941fb4]" started-at="2025-06-07T16:21:06 IST" name="isCurrenciesAreShown" finished-at="2025-06-07T16:21:07 IST" duration-ms="717" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isCurrenciesAreShown -->
-        <test-method signature="isTopItemsAreShown()[pri:4, instance:Test.LunchPageTest@23941fb4]" started-at="2025-06-07T16:21:07 IST" name="isTopItemsAreShown" finished-at="2025-06-07T16:21:07 IST" duration-ms="138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isTopItemsAreShown -->
-        <test-method signature="gadgetsAreShown()[pri:5, instance:Test.LunchPageTest@23941fb4]" started-at="2025-06-07T16:21:07 IST" name="gadgetsAreShown" finished-at="2025-06-07T16:21:07 IST" duration-ms="202" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gadgetsAreShown -->
-        <test-method signature="launchScreenMyAccountDropdownOptionsTitleTest()[pri:6, instance:Test.LunchPageTest@23941fb4]" started-at="2025-06-07T16:21:07 IST" name="launchScreenMyAccountDropdownOptionsTitleTest" finished-at="2025-06-07T16:21:07 IST" duration-ms="388" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchScreenMyAccountDropdownOptionsTitleTest -->
-        <test-method signature="loginScreenNavigationTest()[pri:7, instance:Test.LunchPageTest@23941fb4]" started-at="2025-06-07T16:21:07 IST" name="loginScreenNavigationTest" finished-at="2025-06-07T16:21:08 IST" duration-ms="454" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginScreenNavigationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.LunchPageTest@23941fb4]" started-at="2025-06-07T16:21:12 IST" name="tearDown" finished-at="2025-06-07T16:21:13 IST" duration-ms="1540" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Test.LunchPageTest -->
-    </test> <!-- Selenium firefox test -->
-    <test started-at="2025-06-07T16:21:12 IST" name="Selenium Internet Explorer test" finished-at="2025-06-07T16:21:23 IST" duration-ms="11310">
-      <class name="Test.LoginPageTest">
-        <test-method signature="loginTest()[pri:8, instance:Test.LoginPageTest@45385f75]" started-at="2025-06-07T16:21:16 IST" name="loginTest" finished-at="2025-06-07T16:21:17 IST" duration-ms="1024" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- Test.LoginPageTest -->
-      <class name="Test.HomeScreenTest">
-        <test-method signature="navigationTestToProductDetailsPage()[pri:11, instance:Test.HomeScreenTest@2d29b4ee]" started-at="2025-06-07T16:21:18 IST" name="navigationTestToProductDetailsPage" finished-at="2025-06-07T16:21:18 IST" duration-ms="559" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigationTestToProductDetailsPage -->
-      </class> <!-- Test.HomeScreenTest -->
-      <class name="Test.MyAccountScreenTest">
-        <test-method signature="myAccountSectionLinksTitleTest()[pri:9, instance:Test.MyAccountScreenTest@49c90a9c]" started-at="2025-06-07T16:21:17 IST" name="myAccountSectionLinksTitleTest" finished-at="2025-06-07T16:21:17 IST" duration-ms="247" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- myAccountSectionLinksTitleTest -->
-        <test-method signature="profileScreenToHomeScreenNavigationTest()[pri:10, instance:Test.MyAccountScreenTest@49c90a9c]" started-at="2025-06-07T16:21:17 IST" name="profileScreenToHomeScreenNavigationTest" finished-at="2025-06-07T16:21:18 IST" duration-ms="346" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- profileScreenToHomeScreenNavigationTest -->
-      </class> <!-- Test.MyAccountScreenTest -->
-      <class name="Test.ProductDetailsTest">
-        <test-method signature="productImageLinksStatusCodeTest()[pri:12, instance:Test.ProductDetailsTest@69ee81fc]" started-at="2025-06-07T16:21:18 IST" name="productImageLinksStatusCodeTest" finished-at="2025-06-07T16:21:22 IST" duration-ms="3557" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productImageLinksStatusCodeTest -->
-      </class> <!-- Test.ProductDetailsTest -->
-      <class name="Test.LunchPageTest">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:Test.LunchPageTest@1c9b0314]" started-at="2025-06-07T16:21:12 IST" name="launchBrowser" finished-at="2025-06-07T16:21:14 IST" duration-ms="2229" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:Test.LunchPageTest@1c9b0314]" started-at="2025-06-09T13:25:47 IST" name="launchBrowser" finished-at="2025-06-09T13:25:51 IST" duration-ms="4785" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -231,35 +231,35 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="launchScreenTitleTest()[pri:1, instance:Test.LunchPageTest@1c9b0314]" started-at="2025-06-07T16:21:14 IST" name="launchScreenTitleTest" finished-at="2025-06-07T16:21:14 IST" duration-ms="15" status="PASS">
+        <test-method signature="launchScreenTitleTest()[pri:1, instance:Test.LunchPageTest@1c9b0314]" started-at="2025-06-09T13:25:51 IST" name="launchScreenTitleTest" finished-at="2025-06-09T13:25:51 IST" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchScreenTitleTest -->
-        <test-method signature="isCurrencyDropdownShown()[pri:2, instance:Test.LunchPageTest@1c9b0314]" started-at="2025-06-07T16:21:14 IST" name="isCurrencyDropdownShown" finished-at="2025-06-07T16:21:14 IST" duration-ms="79" status="PASS">
+        <test-method signature="isCurrencyDropdownShown()[pri:2, instance:Test.LunchPageTest@1c9b0314]" started-at="2025-06-09T13:25:51 IST" name="isCurrencyDropdownShown" finished-at="2025-06-09T13:25:52 IST" duration-ms="71" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isCurrencyDropdownShown -->
-        <test-method signature="isCurrenciesAreShown()[pri:3, instance:Test.LunchPageTest@1c9b0314]" started-at="2025-06-07T16:21:14 IST" name="isCurrenciesAreShown" finished-at="2025-06-07T16:21:15 IST" duration-ms="480" status="PASS">
+        <test-method signature="isCurrenciesAreShown()[pri:3, instance:Test.LunchPageTest@1c9b0314]" started-at="2025-06-09T13:25:52 IST" name="isCurrenciesAreShown" finished-at="2025-06-09T13:25:52 IST" duration-ms="755" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isCurrenciesAreShown -->
-        <test-method signature="isTopItemsAreShown()[pri:4, instance:Test.LunchPageTest@1c9b0314]" started-at="2025-06-07T16:21:15 IST" name="isTopItemsAreShown" finished-at="2025-06-07T16:21:15 IST" duration-ms="125" status="PASS">
+        <test-method signature="isTopItemsAreShown()[pri:4, instance:Test.LunchPageTest@1c9b0314]" started-at="2025-06-09T13:25:52 IST" name="isTopItemsAreShown" finished-at="2025-06-09T13:25:52 IST" duration-ms="189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isTopItemsAreShown -->
-        <test-method signature="gadgetsAreShown()[pri:5, instance:Test.LunchPageTest@1c9b0314]" started-at="2025-06-07T16:21:15 IST" name="gadgetsAreShown" finished-at="2025-06-07T16:21:15 IST" duration-ms="188" status="PASS">
+        <test-method signature="gadgetsAreShown()[pri:5, instance:Test.LunchPageTest@1c9b0314]" started-at="2025-06-09T13:25:52 IST" name="gadgetsAreShown" finished-at="2025-06-09T13:25:53 IST" duration-ms="214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gadgetsAreShown -->
-        <test-method signature="launchScreenMyAccountDropdownOptionsTitleTest()[pri:6, instance:Test.LunchPageTest@1c9b0314]" started-at="2025-06-07T16:21:15 IST" name="launchScreenMyAccountDropdownOptionsTitleTest" finished-at="2025-06-07T16:21:15 IST" duration-ms="293" status="PASS">
+        <test-method signature="launchScreenMyAccountDropdownOptionsTitleTest()[pri:6, instance:Test.LunchPageTest@1c9b0314]" started-at="2025-06-09T13:25:53 IST" name="launchScreenMyAccountDropdownOptionsTitleTest" finished-at="2025-06-09T13:25:53 IST" duration-ms="463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchScreenMyAccountDropdownOptionsTitleTest -->
-        <test-method signature="loginScreenNavigationTest()[pri:7, instance:Test.LunchPageTest@1c9b0314]" started-at="2025-06-07T16:21:15 IST" name="loginScreenNavigationTest" finished-at="2025-06-07T16:21:16 IST" duration-ms="516" status="PASS">
+        <test-method signature="loginScreenNavigationTest()[pri:7, instance:Test.LunchPageTest@1c9b0314]" started-at="2025-06-09T13:25:53 IST" name="loginScreenNavigationTest" finished-at="2025-06-09T13:25:54 IST" duration-ms="622" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginScreenNavigationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.LunchPageTest@1c9b0314]" started-at="2025-06-07T16:21:22 IST" name="tearDown" finished-at="2025-06-07T16:21:23 IST" duration-ms="1619" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.LunchPageTest@1c9b0314]" started-at="2025-06-09T13:26:01 IST" name="tearDown" finished-at="2025-06-09T13:26:02 IST" duration-ms="1594" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

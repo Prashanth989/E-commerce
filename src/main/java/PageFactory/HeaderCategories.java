@@ -22,7 +22,7 @@ public class HeaderCategories {
 
 	public void selectMyAccountDropdownItem(String dropdownElement) {
 
-		ReusableMethods.selectWebElementFromList(this.myAccountDropdownElements, dropdownElement);
+		ReusableMethods.selectElementFromList(this.myAccountDropdownElements, dropdownElement);
 	}
 
 	public List<String> getMyAccountDropdownElementsText() {
@@ -31,15 +31,15 @@ public class HeaderCategories {
 
 	}
 
-	public LoginPage goToLogin(String dropdownText) {
+	public String goToLogin(String dropdownText) {
 		selectMyAccountDropdownItem(dropdownText);
-		LoginPage login = new LoginPage();
-		return login;
+		return DriverFactory.getDriver().getCurrentUrl();
+		
 	}
 
 	public void selectHeaderItem(String headerItem) {
 
-		ReusableMethods.selectWebElementFromList(this.headerItems, headerItem);
+		ReusableMethods.selectElementFromList(this.headerItems, headerItem);
 	}
 
 	public ShoppingCartPage goToShoppingCart(String item) {

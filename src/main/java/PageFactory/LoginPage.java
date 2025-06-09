@@ -26,6 +26,11 @@ public final class LoginPage {
 		PageFactory.initElements(DriverFactory.getDriver(), this);
 	}
 
+	public String getLoginTitle()
+	{
+		String LoginTitle = ReusableMethods.getTitle();
+		return LoginTitle;
+	}
 	public void login(String email, String pasword) {
 
 		ReusableMethods.waitAndSendKeys(this.email, email);
@@ -35,5 +40,5 @@ public final class LoginPage {
 		//return DriverFactory.getDriver().getTitle();
 	}
 
-	
+
 }
