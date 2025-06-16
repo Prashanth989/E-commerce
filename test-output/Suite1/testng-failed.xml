@@ -4,16 +4,40 @@
   <listeners>
     <listener class-name="Utils.TestNGListener"/>
   </listeners>
-  <test thread-count="2" parallel="tests" name="Selenium Internet Explorer test(failed)">
-    <parameter name="Browser" value="Internet Explorer"/>
+  <test thread-count="2" parallel="tests" name="Selenium Chrome test(failed)">
+    <parameter name="Browser" value="Chrome"/>
     <classes>
-      <class name="Test.LoginPageTest">
+      <class name="Test.ProductDetailsTest">
         <methods>
           <include name="tearDown"/>
           <include name="launchBrowser"/>
-          <include name="loginTest"/>
+          <include name="checkProductIsAddedToWishList"/>
         </methods>
-      </class> <!-- Test.LoginPageTest -->
+      </class> <!-- Test.ProductDetailsTest -->
+    </classes>
+  </test> <!-- Selenium Chrome test(failed) -->
+  <test thread-count="2" parallel="tests" name="Selenium firefox test(failed)">
+    <parameter name="Browser" value="Firefox"/>
+    <classes>
+      <class name="Test.ProductDetailsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchBrowser"/>
+          <include name="checkProductIsAddedToWishList"/>
+        </methods>
+      </class> <!-- Test.ProductDetailsTest -->
+    </classes>
+  </test> <!-- Selenium firefox test(failed) -->
+  <test thread-count="2" parallel="tests" name="Selenium Internet Explorer test(failed)">
+    <parameter name="Browser" value="Internet Explorer"/>
+    <classes>
+      <class name="Test.ProductDetailsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchBrowser"/>
+          <include name="checkProductIsAddedToWishList"/>
+        </methods>
+      </class> <!-- Test.ProductDetailsTest -->
     </classes>
   </test> <!-- Selenium Internet Explorer test(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 
 
 import PageFactory.ProductDetails;
+import Utils.Variables;
+
 
 public final class ProductDetailsTest extends BaseTest {
 
@@ -20,7 +22,19 @@ public final class ProductDetailsTest extends BaseTest {
 		int linkStatus = details.getProductLinkStatusCode();
 		Assert.assertEquals(linkStatus, 200, "Status Code of the Product is not 200");
 	}
-	
-	
-	
+
+	@Test(priority = 13)
+	public void checkProductIsAddedToWishList()
+	{
+		boolean isAddedToWishList = details.addToWishList();
+		Assert.assertTrue(isAddedToWishList, "Selected Product Is Not Added in the Wish list");
+
+	}
+
+	@Test(priority = 14)
+	public void navigationTestToWishList()
+	{
+		String wishListTitle = details.goToWishListPageFromProductDetails();
+		Assert.assertEquals(wishListTitle, Variables.wishListTitle, "Wish list title is not matching");
+	}
 }

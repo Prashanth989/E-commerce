@@ -23,12 +23,27 @@ public class ReusableMethods {
 		}
 
 		catch (Exception e) {
-			ReusableMethods.log("Title of the Page is not fetched, Exception seen in:" + e.getClass().getName() + " "
-					+ "Exception message is:" + e.getMessage());
+			ReusableMethods.log("Title of the Page is not fetched, Exception seen in:" + " " + "Exception message is:"
+					+ e.toString());
 		}
 
 		return title;
 
+	}
+
+	public static String getText(WebElement element) {
+		String text = null;
+
+		try {
+			text = element.getText();
+			System.out.println("Text of the Element: " + text);
+		}
+
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return text;
 	}
 
 	public static void log(String toPrint) {
@@ -43,7 +58,7 @@ public class ReusableMethods {
 		}
 
 		catch (Exception e) {
-			ReusableMethods.log("Exception is:" + e.getMessage() + " " + "Element is:" + element);
+			ReusableMethods.log("Exception got on mouse hover: " + e.toString() + " " + "Element is:" + element);
 			e.printStackTrace();
 		}
 	}
@@ -102,7 +117,8 @@ public class ReusableMethods {
 	public static void waitAndSendKeys(WebElement element, String input) {
 
 		try {
-			WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), Duration.ofSeconds(Variables.explicitWait));
+			WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(),
+					Duration.ofSeconds(Variables.explicitWait));
 			wait.until(ExpectedConditions.visibilityOf(element)).sendKeys(input);
 		}
 
@@ -117,13 +133,14 @@ public class ReusableMethods {
 	public static void waitAndClick(WebElement element) {
 
 		try {
-			WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), Duration.ofSeconds(Variables.explicitWait));
+			WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(),
+					Duration.ofSeconds(Variables.explicitWait));
 			wait.until(ExpectedConditions.elementToBeClickable(element)).click();
 		}
 
 		catch (Exception e) {
-			ReusableMethods.log("Wait & Click: Element locator: " + element + "Not able to click: Element text: " + element.getText() + " " + "Exeception got: "
-					+ e.getMessage());
+			ReusableMethods.log("Wait & Click: Element locator: " + element + "Not able to click: Element text: "
+					+ element.getText() + " " + "Exeception got: " + e.getMessage());
 			e.printStackTrace();
 		}
 	}
@@ -156,6 +173,7 @@ public class ReusableMethods {
 		}
 
 		catch (IOException e) {
+			e.printStackTrace();
 			System.out.println("Error accessing image URL: " + sourceOfLink + " - " + e.getMessage());
 		}
 
@@ -176,6 +194,7 @@ public class ReusableMethods {
 		}
 
 		catch (Exception e) {
+			e.printStackTrace();
 			ReusableMethods.log("Null check of the Element is failed: " + "following exceprion:" + e.getMessage());
 		}
 

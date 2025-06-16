@@ -15,6 +15,7 @@
 			<class name="Test.MyAccountScreenTest" />
 			<class name="Test.HomeScreenTest" />
 			<class name="Test.ProductDetailsTest" />
+			<class name="Test.WishListPageTest" />
 		</classes>
 	</test>
 
@@ -27,6 +28,7 @@
 			<class name="Test.MyAccountScreenTest" />
 			<class name="Test.HomeScreenTest" />
 			<class name="Test.ProductDetailsTest" />
+			<class name="Test.WishListPageTest" />
 		</classes>
 	</test>
 
@@ -39,6 +41,9 @@
 			<class name="Test.MyAccountScreenTest" />
 			<class name="Test.HomeScreenTest" />
 			<class name="Test.ProductDetailsTest" />
+			<class name="Test.WishListPageTest" />
+			
+			
 		</classes>
 	</test>
 

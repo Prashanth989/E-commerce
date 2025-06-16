@@ -17,6 +17,7 @@ public class Variables {
 	public static String locProject = System.getProperty("user.dir");
 	
 
+	public static String wishListTitle = "My Wish List";
 	
 	public static String getProjectLoc()
 	{

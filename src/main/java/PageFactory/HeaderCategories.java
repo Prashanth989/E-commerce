@@ -57,7 +57,7 @@ public class HeaderCategories {
 	}
 
 	public WhishListPage goToWhishlist(String item) {
-		selectHeaderItem("Shopping Cart");
+		selectHeaderItem(item);
 
 		WhishListPage wishList = new WhishListPage();
 		return wishList;

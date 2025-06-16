@@ -10,11 +10,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import Utils.ReadPropertiesFile;
 import Utils.RemoteBrowser;
-import Utils.ReusableMethods;
 import Utils.Variables;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BrowserFactory {
+public final class BrowserFactory {
 
 	public static WebDriver driver;
 	static String remoteBrowserName;
@@ -23,7 +22,7 @@ public class BrowserFactory {
 	public static void initialiseBrowser(String browserToLaunch) throws IOException {
 		try {
 
-			System.out.println(Thread.currentThread().getId() + ":" + BrowserFactory.driver);
+			System.out.println("Thread: " + Thread.currentThread().getId() +" " + "Valve of the thread: " + BrowserFactory.driver);
 			if (DriverFactory.getDriver() == null) {
 				switch (browserToLaunch) {
 				case "Chrome":
@@ -55,7 +54,7 @@ public class BrowserFactory {
 		}
 
 		catch (Exception e) {
-			ReusableMethods.log("Browser is not initialised, due to the Exception: " + e.getMessage());
+			e.printStackTrace();
 		}
 		DriverFactory.setDriver(driver);
 		DriverFactory.getDriver().manage().window().maximize();
@@ -69,10 +68,17 @@ public class BrowserFactory {
 
 
 	public static void quitBrowser() {
-		if (DriverFactory.getDriver()!=null) {
-			System.out.println("Driver: Thread: " + DriverFactory.getDriver() + " : " + Thread.currentThread().getId() +" Is Closing");
+		try {
+			if (DriverFactory.getDriver()!=null) {
+				System.out.println("Driver: Thread: " + DriverFactory.getDriver() + " : " + Thread.currentThread().getId() +" Is Closing");
 
-			DriverFactory.remove();
+				DriverFactory.remove();
+			}
+		}
+
+		catch(Exception e)
+		{
+			e.printStackTrace();
 		}
 	}
 
