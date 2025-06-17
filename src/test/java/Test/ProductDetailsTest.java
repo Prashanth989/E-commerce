@@ -14,7 +14,7 @@ public final class ProductDetailsTest extends BaseTest {
 
 	ProductDetails details;
 
-	@Test(priority = 12)
+	@Test(priority = 13)
 	public void productImageLinksStatusCodeTest() throws IOException {
 		details = new ProductDetails();
 		boolean appResult = details.isProductLinkSourceEmpty();
@@ -23,7 +23,7 @@ public final class ProductDetailsTest extends BaseTest {
 		Assert.assertEquals(linkStatus, 200, "Status Code of the Product is not 200");
 	}
 
-	@Test(priority = 13)
+	@Test(priority = 14)
 	public void checkProductIsAddedToWishList()
 	{
 		boolean isAddedToWishList = details.addToWishList();
@@ -31,7 +31,7 @@ public final class ProductDetailsTest extends BaseTest {
 
 	}
 
-	@Test(priority = 14)
+	@Test(priority = 15)
 	public void navigationTestToWishList()
 	{
 		String wishListTitle = details.goToWishListPageFromProductDetails();

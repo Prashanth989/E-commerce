@@ -12,14 +12,14 @@ public final class MyAccountScreenTest extends BaseTest {
 
 	MyAccountPage myAccount;
 
-	@Test(priority = 9)
+	@Test(priority = 10)
 	public void myAccountSectionLinksTitleTest() {
 		myAccount = new MyAccountPage();
 		List<String> myAccountSectionLinksTitle = myAccount.getMyAccountSectionLinksText();
 		Assert.assertNotNull(myAccountSectionLinksTitle, "My Account section titles are null");
 	}
 
-	@Test(priority = 10)
+	@Test(priority = 11)
 	public void profileScreenToHomeScreenNavigationTest()  {
 		myAccount.navigateToHomeScreenOnSelectingLogo();
 		boolean isNavigating = DriverFactory.getDriver().getCurrentUrl().contains("/home");

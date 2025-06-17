@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test.dropdown">
+      <class name="Test.LunchPageTest">
         <methods>
-          <include name="test"/>
+          <include name="verifySliderActiveImageIsDisplaying"/>
+          <include name="tearDown"/>
+          <include name="launchBrowser"/>
         </methods>
-      </class> <!-- Test.dropdown -->
+      </class> <!-- Test.LunchPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

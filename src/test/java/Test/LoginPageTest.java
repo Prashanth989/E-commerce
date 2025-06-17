@@ -17,7 +17,7 @@ public final class LoginPageTest extends BaseTest {
 	LoginPage login;
 	
 	
-	@Test(priority = 8)
+	@Test(priority = 9)
 	public void loginTest() throws IOException, InterruptedException {
 		login = new LoginPage();
 

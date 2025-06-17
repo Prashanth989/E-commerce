@@ -4,61 +4,40 @@
   <listeners>
     <listener class-name="Utils.TestNGListener"/>
   </listeners>
-  <test thread-count="2" parallel="tests" name="Selenium firefox test(failed)">
-    <parameter name="Browser" value=""/>
+  <test thread-count="2" parallel="tests" name="Selenium Chrome test(failed)">
+    <parameter name="Browser" value="Chrome"/>
     <classes>
-      <class name="Test.ProductDetailsTest">
-        <methods>
-          <include name="navigationTestToWishList"/>
-          <include name="tearDown"/>
-          <include name="productImageLinksStatusCodeTest"/>
-          <include name="launchBrowser"/>
-          <include name="checkProductIsAddedToWishList"/>
-        </methods>
-      </class> <!-- Test.ProductDetailsTest -->
       <class name="Test.WishListPageTest">
         <methods>
           <include name="tearDown"/>
           <include name="launchBrowser"/>
-          <include name="verifySelectedProductIsAddedIntoTheWishlist"/>
           <include name="verifySelectedProductIsRemovedFromTheWishlist"/>
         </methods>
       </class> <!-- Test.WishListPageTest -->
-      <class name="Test.HomeScreenTest">
+    </classes>
+  </test> <!-- Selenium Chrome test(failed) -->
+  <test thread-count="2" parallel="tests" name="Selenium firefox test(failed)">
+    <parameter name="Browser" value="Firefox"/>
+    <classes>
+      <class name="Test.WishListPageTest">
         <methods>
           <include name="tearDown"/>
           <include name="launchBrowser"/>
-          <include name="navigationTestToProductDetailsPage"/>
+          <include name="verifySelectedProductIsRemovedFromTheWishlist"/>
         </methods>
-      </class> <!-- Test.HomeScreenTest -->
-      <class name="Test.LunchPageTest">
-        <methods>
-          <include name="launchScreenTitleTest"/>
-          <include name="isCurrenciesAreShown"/>
-          <include name="tearDown"/>
-          <include name="isCurrencyDropdownShown"/>
-          <include name="launchBrowser"/>
-          <include name="launchScreenMyAccountDropdownOptionsTitleTest"/>
-          <include name="loginScreenNavigationTest"/>
-          <include name="isTopItemsAreShown"/>
-          <include name="gadgetsAreShown"/>
-        </methods>
-      </class> <!-- Test.LunchPageTest -->
-      <class name="Test.LoginPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="launchBrowser"/>
-          <include name="loginTest"/>
-        </methods>
-      </class> <!-- Test.LoginPageTest -->
-      <class name="Test.MyAccountScreenTest">
-        <methods>
-          <include name="profileScreenToHomeScreenNavigationTest"/>
-          <include name="tearDown"/>
-          <include name="myAccountSectionLinksTitleTest"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- Test.MyAccountScreenTest -->
+      </class> <!-- Test.WishListPageTest -->
     </classes>
   </test> <!-- Selenium firefox test(failed) -->
+  <test thread-count="2" parallel="tests" name="Selenium Internet Explorer test(failed)">
+    <parameter name="Browser" value="Internet Explorer"/>
+    <classes>
+      <class name="Test.WishListPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchBrowser"/>
+          <include name="verifySelectedProductIsRemovedFromTheWishlist"/>
+        </methods>
+      </class> <!-- Test.WishListPageTest -->
+    </classes>
+  </test> <!-- Selenium Internet Explorer test(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

@@ -10,7 +10,7 @@ public class WishListPageTest extends BaseTest
 	WhishListPage wishlist;
 
 
-	@Test(priority = 15)
+	@Test(priority = 16)
 	public void verifySelectedProductIsAddedIntoTheWishlist()
 	{
 		wishlist = new WhishListPage();
@@ -20,7 +20,7 @@ public class WishListPageTest extends BaseTest
 	}
 
 
-	@Test(priority = 16)
+	@Test(priority = 17)
 	public void verifySelectedProductIsRemovedFromTheWishlist()
 	{
 		wishlist.removeProductFromWishList();
