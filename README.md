@@ -6,6 +6,7 @@
 - **Java**: Programming language
 - **Extent report**: Automation report
 - **Log4j**: To get the log's
+- **Webdriver Manager**: To Set-Up the driver's
 
 **Application:**
 - https://naveenautomationlabs.com/
