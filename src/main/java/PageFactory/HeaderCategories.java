@@ -20,25 +20,20 @@ public class HeaderCategories {
 		PageFactory.initElements(DriverFactory.getDriver(), this);
 	}
 
-	public void selectMyAccountDropdownItem(String dropdownElement) {
-
+	public void selectElementFromMyAccountDropdown(String dropdownElement) {
 		ReusableMethods.selectElementFromList(this.myAccountDropdownElements, dropdownElement);
 	}
 
 	public List<String> getMyAccountDropdownElementsText() {
-
 		return ReusableMethods.fetchTextFromList(this.myAccountDropdownElements);
-
 	}
 
 	public String goToLogin(String dropdownText) {
-		selectMyAccountDropdownItem(dropdownText);
+		selectElementFromMyAccountDropdown(dropdownText);
 		return DriverFactory.getDriver().getCurrentUrl();
-		
 	}
 
 	public void selectHeaderItem(String headerItem) {
-
 		ReusableMethods.selectElementFromList(this.headerItems, headerItem);
 	}
 

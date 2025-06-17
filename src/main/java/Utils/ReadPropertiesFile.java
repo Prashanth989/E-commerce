@@ -21,7 +21,8 @@ public class ReadPropertiesFile {
 		}
 
 		catch (Exception e) {
-			ReusableMethods.log("Valve is not fetched for the Key: " + key + " " + "Exception got: " + e.getMessage());
+			System.out.println("Valve is not fetched for the Key: " + key + "\n Exception Seen: " + e.getStackTrace()[0].getClassName());
+			ReusableMethods.log("Valve is not fetched for the Key: " + key + "\n Exception Seen: " + e.getStackTrace()[0].getClassName());
 			e.printStackTrace();
 		}
 

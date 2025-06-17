@@ -13,35 +13,44 @@ public class TestNGListener implements ITestListener {
 
 	public void onFinish(ITestContext context) {
 		ExtentReporter.flushExtent();
+		System.out.println("Execution of the test cases from: " + context.getName() +" " + "is finished on: " + context.getStartDate() + "\nTotal test case Passed: "
+				+ context.getPassedTests() + " " + "on the thread:" + Thread.currentThread().getId());
 		ReusableMethods
-				.log(" Execution is finished " + context.getName() + context.getStartDate() + "Total test case Passed: "
-						+ context.getPassedTests() + "Parallel Execution: Thread:" + Thread.currentThread().getId());
+		.log("Execution of the test case: " + context.getName() +" " + "is finished on: " + context.getStartDate() + "\nTotal test case Passed: "
+				+ context.getPassedTests() + " " + "on the thread:" + Thread.currentThread().getId());
 
-		ReusableMethods.log(" Execution is finished " + context.getName() + context.getStartDate()
-				+ "Total test case failed: " + context.getFailedTests());
-		ReusableMethods.log(" Execution is finished " + context.getName() + context.getStartDate()
-				+ "Total test case Skipped: " + context.getSkippedTests());
+		System.out.println("Execution of the test case: " + context.getName() +" " + "is finished on: " + context.getStartDate() + "\nTotal test case failed: "
+				+ context.getFailedTests() + " " + "on the thread:" + Thread.currentThread().getId());
+		ReusableMethods.log("Execution of the test case: " + context.getName() +" " + "is finished on: " + context.getStartDate() + "\nTotal test case failed: "
+				+ context.getFailedTests() + " " + "on the thread:" + Thread.currentThread().getId());
+
+		System.out.println("Execution of the test case: " + context.getName() +" " + "is finished on: " + context.getStartDate() + "\nTotal test case Skipped: "
+				+ context.getSkippedTests() + " " + "on the thread:" + Thread.currentThread().getId());
+		ReusableMethods.log("Execution of the test case: " + context.getName() +" " + "is finished on: " + context.getStartDate() + "\nTotal test case Skipped: "
+				+ context.getSkippedTests() + " " + "on the thread:" + Thread.currentThread().getId());
 	}
 
 	public void onTestStart(ITestResult result) {
-		ReusableMethods.log(" Execution of the test case is Started: " + "Test case is: " + result.getMethod()
-				+ "Parallel Execution: Thread:" + Thread.currentThread().getId());
+		System.out.println("Execution of the test case: " + result.getName() + " " + "is started" + " " + "on the thread: " + Thread.currentThread().getId());
+		ReusableMethods.log("Execution of the test case: " + result.getName() + " " + "is started" + " " + "on the thread: " + Thread.currentThread().getId());
 	}
 
 	public void onTestSuccess(ITestResult result) {
+		System.out.println("Execution of the test case: " + result.getName() + " " + "is success" + " " + "on the thread: " + Thread.currentThread().getId());
 		ExtentReporter.logPassedTestOnExtentReport(result.getName());
-		ReusableMethods.log(" Execution of the test case is Success " + "Test case is: " + result.getMethod());
+		ReusableMethods.log("Execution of the test case: " + result.getName() + " " + "is success" + " " + "on the thread: " + Thread.currentThread().getId());
 	}
 
 	public void onTestFailure(ITestResult result) {
+		System.out.println("Execution of the test case: " + result.getName() + " " + "is failed" + " " + "on the thread: " + Thread.currentThread().getId());
 		ExtentReporter.logfailedTestOnExtentReport(result.getName());
-		ReusableMethods.log(" Execution of the test case is failed " + "Test case is: " + result.getMethod());
+		ReusableMethods.log("Execution of the test case: " + result.getName() + " " + "is failed" + " " + "on the thread: " + Thread.currentThread().getId());
 	}
 
 	public void onTestSkipped(ITestResult result) {
-
+		System.out.println("Execution of the test case: " + result.getName() + " " + "is skipped" + " " + "on the thread: " + Thread.currentThread().getId());
 		ExtentReporter.logSkippedTestOnExtentReport(result.getName());
-		ReusableMethods.log(" Execution of the test case is Skipped " + "Test case is: " + result.getMethod());
+		ReusableMethods.log("Execution of the test case: " + result.getName() + " " + "is skipped" + " " + "on the thread: " + Thread.currentThread().getId());
 	}
 
 	/*

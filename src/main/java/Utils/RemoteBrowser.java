@@ -4,8 +4,6 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import Base.BrowserFactory;
 
-
-
 public class RemoteBrowser {
 	public static RemoteWebDriver remoteWebdriver;
 

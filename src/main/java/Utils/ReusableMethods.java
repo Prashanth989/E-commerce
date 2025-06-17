@@ -20,11 +20,16 @@ public class ReusableMethods {
 		String title = null;
 		try {
 			title = DriverFactory.getDriver().getTitle();
+			if (title == null || title.isEmpty()) {
+				throw new NullPointerException("Title of the Page is null or empty, Please check");
+			}
 		}
 
 		catch (Exception e) {
-			ReusableMethods.log("Title of the Page is not fetched, Exception seen in:" + " " + "Exception message is:"
-					+ e.toString());
+			System.out.println("Title of the page is not fetched, Exception seen is: " + e.toString());
+			e.printStackTrace();
+			ReusableMethods.log("Title of the Page is not fetched, Error found in run time, Exception seen in:" + " "
+					+ "Exception message is:" + e.toString());
 		}
 
 		return title;
@@ -36,10 +41,11 @@ public class ReusableMethods {
 
 		try {
 			text = element.getText();
-			System.out.println("Text of the Element: " + text);
+			System.out.println("Text of the element is: " + text);
 		}
 
 		catch (Exception e) {
+			System.out.println("Text of the element is failed to fetech for the element: " + element + ":" + "Exception seen is: " + e.toString());
 			e.printStackTrace();
 		}
 
@@ -58,33 +64,38 @@ public class ReusableMethods {
 		}
 
 		catch (Exception e) {
+			System.out.println("Failed to perform mouse hover on the element: " + element + ":" + "Exception seen is: " + e.toString());
 			ReusableMethods.log("Exception got on mouse hover: " + e.toString() + " " + "Element is:" + element);
 			e.printStackTrace();
 		}
 	}
 
-	public static List<String> fetchTextFromList(List<WebElement> currencies) {
+	public static List<String> fetchTextFromList(List<WebElement> elements) {
 
 		ArrayList<String> addElementTitle = new ArrayList<String>();
 		try {
-			System.out.println("Total titles:" + currencies.size());
+			if(elements.size() == 0){
+				throw new Exception("List of elements size is returned is 0, failed to fetch the text of elements, Please check");
+			}
+			else{
+				for (WebElement element : elements) {
+					String currentElementText = element.getText();
+					System.out.println("Fetching of the text started \n Text returned: " + currentElementText);
 
-			for (WebElement element : currencies) {
-				String currentElementText = element.getText();
-				System.out.println("Title:" + currentElementText);
+					if (currentElementText != null) {
+						addElementTitle.add(currentElementText);
+					}
 
-				if (currentElementText != null) {
-					addElementTitle.add(currentElementText);
-				}
-
-				else {
-					System.out.println("Element title is not fetched: " + element);
+					else if(currentElementText == null)  {
+						throw new NullPointerException("Text of the elements are null, Please check");
+					}
 				}
 			}
 
-		} catch (Exception e) {
-			// BasePage.log("Exception is:" + e.getMessage() + " " + "Element text is null:"
-			// + element);
+		} 
+
+		catch (Exception e) {
+			System.out.println("Exception got when fetching the text of list of elements: " + elements);
 			e.printStackTrace();
 		}
 
@@ -95,19 +106,29 @@ public class ReusableMethods {
 	public static void selectElementFromList(List<WebElement> allElement, String elementNeedToSelect) {
 
 		try {
+			if(allElement.size() == 0){
+				throw new Exception("List of elements size is returned is 0, failed to select the element from the list, Please check");
+			}
 
-			for (WebElement currentWebElement : allElement) {
-				String currentWebElementString = currentWebElement.getText();
-				if (currentWebElementString != null && currentWebElementString.equals(elementNeedToSelect)) {
+			else{
+				for (WebElement currentWebElement : allElement) {
+					String currentWebElementString = currentWebElement.getText();
+					if (currentWebElementString != null && currentWebElementString.equals(elementNeedToSelect)) {
 
-					System.out.println("Element|" + currentWebElementString + " Is Selected");
-					ReusableMethods.waitAndClick(currentWebElement);
-					break;
+						System.out.println("Item: " + currentWebElementString + " Is Selected");
+						ReusableMethods.waitAndClick(currentWebElement);
+						break;
+					}
+
+					else if(currentWebElementString == null){
+						throw new NullPointerException("Text of the element is null, failed to compare the text & selecting the element, Please check");
+					}
 				}
 			}
 		}
 
 		catch (Exception e) {
+			System.out.println("Exception got when selecting the element from the list: " + e.toString());
 			ReusableMethods.log("Not able to Select the element, due to the exception " + e.getMessage());
 			e.printStackTrace();
 		}
@@ -123,6 +144,7 @@ public class ReusableMethods {
 		}
 
 		catch (Exception e) {
+			System.out.println("Exception got when waiting & sending the keys: " + e.toString());
 			ReusableMethods.log("Not able to send the key's to the element: " + element.getText() + " "
 					+ "Exeception got: " + e.getMessage());
 			e.printStackTrace();
@@ -139,6 +161,7 @@ public class ReusableMethods {
 		}
 
 		catch (Exception e) {
+			System.out.println("Exception got when waiting & selecting the element: " + e.toString());
 			ReusableMethods.log("Wait & Click: Element locator: " + element + "Not able to click: Element text: "
 					+ element.getText() + " " + "Exeception got: " + e.getMessage());
 			e.printStackTrace();

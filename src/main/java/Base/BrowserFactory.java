@@ -2,12 +2,10 @@ package Base;
 
 import java.io.IOException;
 import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
 import Utils.ReadPropertiesFile;
 import Utils.RemoteBrowser;
 import Utils.Variables;
@@ -47,13 +45,15 @@ public final class BrowserFactory {
 					break;
 
 				default:
-					throw new Exception("No browser Parameter is given to launch the browser");
+
+					throw new Exception("Invalid browser parameter is given from the testng.xml - parameterisation section");
 				}
 
 			}
 		}
 
 		catch (Exception e) {
+			System.out.println("Invalid browser parameter is given from the testng.xml - parameterisation section\nException got in the class: " + e.getStackTrace()[0].getClassName());
 			e.printStackTrace();
 		}
 		DriverFactory.setDriver(driver);
@@ -78,6 +78,7 @@ public final class BrowserFactory {
 
 		catch(Exception e)
 		{
+			System.out.println(Thread.currentThread().getId() + " " + "is not closed\nException got in the class: " + e.getStackTrace()[0].getClassName());
 			e.printStackTrace();
 		}
 	}

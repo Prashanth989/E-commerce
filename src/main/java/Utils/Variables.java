@@ -1,7 +1,5 @@
 package Utils;
 
-
-
 public class Variables {
 
 	public static String lunchTitle = "Your Store";

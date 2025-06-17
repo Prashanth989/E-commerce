@@ -20,41 +20,29 @@ public class WhishListPage
 	@FindBy(xpath = "//div[@id='content']/p")
 	WebElement removedFromWishListSuccessMessage;
 
-
 	public WhishListPage() {
 		PageFactory.initElements(DriverFactory.getDriver(), this);
 	}
 
-	public String getWishListTitle()
-	{
+	public String getWishListTitle(){
 		String wishListTitle = ReusableMethods.getTitle();
 		return wishListTitle;
 	}
 
-	public String getWishListProductTitle()
-	{
+	public String getWishListProductTitle(){
 		String wishListProductAttributeValve = "";
-		for(WebElement wishListProduct: WishListProducts)
-		{
+		for(WebElement wishListProduct: WishListProducts){
 			wishListProductAttributeValve = wishListProduct.getAttribute("title");
 			System.out.println(wishListProductAttributeValve);
 		}
-
 		return wishListProductAttributeValve;
 	}
 
-
-
-
-
-	public void removeProductFromWishList()
-	{
+	public void removeProductFromWishList(){
 		ReusableMethods.waitAndClick(removeFromWhishList);
 	}
 
-
-	public String getRemovedFromWishListSuccessMessage()
-	{
+	public String getRemovedFromWishListSuccessMessage(){
 		String removedFromWishListSuccessMessageText = ReusableMethods.getText(removedFromWishListSuccessMessage);
 		return removedFromWishListSuccessMessageText;
 	}
