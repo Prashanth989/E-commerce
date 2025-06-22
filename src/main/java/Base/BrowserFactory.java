@@ -14,8 +14,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public final class BrowserFactory {
 
 	public static WebDriver driver;
-	static String remoteBrowserName;
-	static String remoteBrowserVersion;
 
 	public static void initialiseBrowser(String browserToLaunch) throws IOException {
 		try {
@@ -26,22 +24,16 @@ public final class BrowserFactory {
 				case "Chrome":
 					WebDriverManager.chromedriver().setup();
 					driver = new ChromeDriver();
-					remoteBrowserName = RemoteBrowser.getBrowserName();
-					remoteBrowserVersion = RemoteBrowser.getBrowserVersion();
 					break;
 
 				case "Firefox":
 					WebDriverManager.firefoxdriver().setup();
 					driver = new FirefoxDriver();
-					remoteBrowserName = RemoteBrowser.getBrowserName();
-					remoteBrowserVersion = RemoteBrowser.getBrowserVersion();
 					break;
 
 				case "Internet Explorer":
 					WebDriverManager.edgedriver().setup();
 					driver = new EdgeDriver();
-					remoteBrowserName = RemoteBrowser.getBrowserName();
-					remoteBrowserVersion = RemoteBrowser.getBrowserVersion();
 					break;
 
 				default:
@@ -56,6 +48,12 @@ public final class BrowserFactory {
 			System.out.println("Invalid browser parameter is given from the testng.xml - parameterisation section\nException got in the class: " + e.getStackTrace()[0].getClassName());
 			e.printStackTrace();
 		}
+
+		String remoteBrowserName = RemoteBrowser.getBrowserName();
+		System.out.println("Name of the browser: " + remoteBrowserName);
+		String remoteBrowserVersion = RemoteBrowser.getBrowserVersion();
+		System.out.println("Version of the browser: " + remoteBrowserVersion);
+
 		DriverFactory.setDriver(driver);
 		DriverFactory.getDriver().manage().window().maximize();
 		System.out.println("Thread: " + Thread.currentThread().getId() +" Is Running in " + DriverFactory.getDriver());
