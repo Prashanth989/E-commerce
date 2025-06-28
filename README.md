@@ -1,4 +1,4 @@
-🚀 <u>Playwright Data-Driven Framework with Java</u>  
+🚀 <u>Playwright Data-Driven Framework with Java  </u>
 
 A robust automation testing framework built using Selenum Java with support of testNG.  
 
