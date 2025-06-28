@@ -13,14 +13,17 @@ A robust automation testing framework built using Selenum Java with support of t
 - 📜 Log4j – Logging mechanism
 
 **Application:**
+***
 - https://naveenautomationlabs.com/
 
 **Scenarios automated:**
+***
 - Login to the Application with Valid username, password
 - Select a Product
 - Validate the Product link's are not broken & the links Status Code
 
 **Test case covered:**
+***
 - Launch the Application
 - Verifying the Redirection check to the launch page
 - Verifying the My Account dropdown elements titles
