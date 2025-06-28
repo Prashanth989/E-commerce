@@ -1,3 +1,5 @@
+🚀 Playwright Data-Driven Framework with Java
+
 🚀 Selenium testNG Framework with Java
 🎭 Selenium Java – Fast and reliable browser automation
 📗 Apache POI – Read/write Excel data
