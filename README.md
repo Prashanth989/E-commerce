@@ -1,4 +1,4 @@
-🚀 Playwright Data-Driven Framework with Java
+🚀 Playwright Data-Driven Framework with Java  
 A robust automation testing framework built using Selenum Java with support of testNG.
 
 🚀 Selenium testNG Framework with Java
