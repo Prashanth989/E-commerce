@@ -4,13 +4,12 @@ A robust automation testing framework built using Selenum Java with support of t
 
 🧰 **Tech Stack**  
 ***
-- 🚀 Selenium testNG Framework with Java  
-- 🎭 Selenium Java – Fast and reliable browser automation  
-- 📗 Apache POI – Read/write Excel data  
-- 📊 Extent Reports – Detailed HTML reports  
-- 🔍 TestNG – Flexible test execution with assertions and parallelism  
-- ⚙️ Maven – Build and dependency management  
-- 📜 Log4j – Logging mechanism
+- 🚀 **Selenium testNG** - Framework with Java   
+- 📗 **Apache POI** – Read/write Excel data  
+- 📊 **Extent Reports** – Detailed HTML reports  
+- 🔍 **TestNG** – Flexible test execution with assertions and parallelism  
+- ⚙️ **Maven** – Build and dependency management  
+- 📜 **Log4j** – Logging mechanism
 
 **Application:**
 ***
