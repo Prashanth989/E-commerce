@@ -1,13 +1,11 @@
 🚀 Selenium testNG Framework with Java
-**Languages and Frameworks**
-- **Eclipse**: Editor
-- **Selenium Webdriver**: Automation tool
-- **testNG framework**: Managing the test cases
-- **Maven**: Build Automation tool
-- **Java**: Programming language
-- **Extent report**: Automation report
-- **Log4j**: To get the log's
-- **Webdriver Manager**: To Set-Up the driver's
+🎭 Selenium Java – Fast and reliable browser automation
+📗 Apache POI – Read/write Excel data
+📊 Extent Reports – Detailed HTML reports
+🔍 TestNG – Flexible test execution with assertions and parallelism
+⚙️ Maven – Build and dependency management
+📜 Log4j – Logging mechanism
+🧪 Data-Driven Testing – Run tests with dynamic inputs
 
 **Application:**
 - https://naveenautomationlabs.com/
