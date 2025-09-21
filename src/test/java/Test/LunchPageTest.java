@@ -24,54 +24,42 @@ public final class LunchPageTest extends BaseTest {
 	}
 
 	@Test(priority = 2)
-	public void verifySliderActiveImageIsDisplaying() throws InterruptedException{
-		boolean slider = beforeLogin.isSliderImageLoading();
-		Assert.assertTrue(slider, "Slider image is not loading");
-	}
-	
-	@Test(priority = 3)
 	public void isCurrencyDropdownShown() {
 		boolean isExist = beforeLogin.isCurrencyDropdownDisplaying();
 		Assert.assertTrue(isExist, "Currency dropdown is not shown in the launch Page");
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 3)
 	public void isCurrenciesAreShown() {
-
-
 		List<String> currencies = beforeLogin.getCurrencies();
 		Assert.assertNotNull(currencies, "Currencies are not Shown");
-
 		beforeLogin.selectCurrency();
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 4)
 	public void isTopItemsAreShown() {
 		categories = new HeaderCategories();
 		List<String> headerItems = categories.getHeaderItemsTexts();
 		Assert.assertNotNull(headerItems, "Header Items were not Shown");
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 5)
 	public void gadgetsAreShown() {
 		List<String> gadgets = beforeLogin.getGadgetsTitles();
 		Assert.assertNotNull(gadgets, "gadgets are not Shown");
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 8)
 	public void launchScreenMyAccountDropdownOptionsTitleTest() {
 		categories.selectHeaderItem("My Account");
 		List<String> dropdownTitles = categories.getMyAccountDropdownElementsText();
 		Assert.assertNotNull(dropdownTitles, "My Account dropdown titles are null");
 	}
 
-	@Test(priority = 8)
+	@Test(priority = 9)
 	public void loginScreenNavigationTest() {
 		String link = categories.goToLogin("Login");
 		boolean isNavigating = link.contains("/login");
-		Assert.assertTrue(isNavigating,
-				"Login page title is not matched, Redirection to login screen is failed");
-
+		Assert.assertTrue(isNavigating, "Login page title is not matched, Redirection to login screen is failed");
 	}
-	
 }

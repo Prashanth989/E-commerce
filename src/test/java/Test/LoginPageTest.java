@@ -17,17 +17,15 @@ public final class LoginPageTest extends BaseTest {
 	LoginPage login;
 	
 	
-	@Test(priority = 9)
+	@Test(priority = 10)
 	public void loginTest() throws IOException, InterruptedException {
 		login = new LoginPage();
-
 		String username = ReadPropertiesFile.getValve("userName");
 		String pin = ReadPropertiesFile.getValve("userPin");
 
 		login.login(username, pin);
 
 		String loginTitle = DriverFactory.getDriver().getTitle();
-		
 		ReusableMethods.log(
 				"----- Logging in with " + username + " " + pin + " Title of the dashboard screen " + loginTitle);
 		Assert.assertEquals(loginTitle, "My Account",

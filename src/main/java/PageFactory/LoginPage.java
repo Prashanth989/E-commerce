@@ -1,10 +1,8 @@
 package PageFactory;
 
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 
 import Base.DriverFactory;
 import Utils.ReusableMethods;
@@ -26,19 +24,18 @@ public final class LoginPage {
 		PageFactory.initElements(DriverFactory.getDriver(), this);
 	}
 
-	public String getLoginTitle()
-	{
+	public String getLoginTitle() {
 		String LoginTitle = ReusableMethods.getTitle();
 		return LoginTitle;
 	}
+
 	public void login(String email, String pasword) {
 
 		ReusableMethods.waitAndSendKeys(this.email, email);
 		ReusableMethods.waitAndSendKeys(this.pasword, pasword);
 
 		ReusableMethods.waitAndClick(this.login);
-		//return DriverFactory.getDriver().getTitle();
+		// return DriverFactory.getDriver().getTitle();
 	}
-
 
 }

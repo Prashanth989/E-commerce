@@ -88,10 +88,5 @@
 		</dependency>
 
 
-		<dependency>
-			<groupId>tv2z</groupId>
-			<artifactId>Spring</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 	</dependencies>
 </project>

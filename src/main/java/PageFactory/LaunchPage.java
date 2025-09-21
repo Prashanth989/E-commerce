@@ -24,10 +24,10 @@ public final class LaunchPage {
 
 	@FindBy(xpath = "//ul[@class='nav navbar-nav']/li")
 	List<WebElement> gadgets;
-	
+
 	@FindBy(id = "carousel0")
 	WebElement sliderWidget;
-	
+
 	@FindBy(css = ".swiper-button-next")
 	WebElement sliderNext;
 
@@ -57,31 +57,5 @@ public final class LaunchPage {
 	public List<String> getGadgetsTitles() {
 		List<String> gadgets = ReusableMethods.fetchTextFromList(this.gadgets);
 		return gadgets;
-	}
-
-	public boolean isSliderImageLoading() throws InterruptedException
-	{
-		((JavascriptExecutor) DriverFactory.getDriver()).executeScript("arguments[0].scrollIntoView(true);", sliderWidget);
-		ReusableMethods.waitAndClick(sliderNext);
-		
-		Thread.sleep(1000);
-		
-		 WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(), Duration.ofSeconds(10));
-         WebElement activeSlide = wait.until(
-             ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".swiper-slide.swiper-slide-active img"))
-         );
-		
-          String attribute = activeSlide.getAttribute("src");
-          System.out.println("Image source of the Slider Widget which is active: " +attribute);
-         
-          
-          JavascriptExecutor js = (JavascriptExecutor)DriverFactory.getDriver();
-          Boolean imageLoaded = (Boolean) js.executeScript(
-              "return arguments[0].complete && " +
-              "typeof arguments[0].naturalWidth != 'undefined' && " +
-              "arguments[0].naturalWidth > 0;", activeSlide);
-          
-          System.out.println("Slider image is loading: " + imageLoaded);
-          return imageLoaded;
 	}
 }

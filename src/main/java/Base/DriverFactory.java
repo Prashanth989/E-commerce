@@ -7,7 +7,6 @@ public class DriverFactory {
 	public static ThreadLocal<WebDriver> thread = new ThreadLocal<>();
 
 	public static WebDriver getDriver() {
-
 		return thread.get();
 	}
 
@@ -21,3 +20,4 @@ public class DriverFactory {
 	}
 
 }
+		

@@ -5,16 +5,14 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-
 import PageFactory.ProductDetails;
 import Utils.Variables;
-
 
 public final class ProductDetailsTest extends BaseTest {
 
 	ProductDetails details;
 
-	@Test(priority = 13)
+	@Test(priority = 14)
 	public void productImageLinksStatusCodeTest() throws IOException {
 		details = new ProductDetails();
 		boolean appResult = details.isProductLinkSourceEmpty();
@@ -23,17 +21,14 @@ public final class ProductDetailsTest extends BaseTest {
 		Assert.assertEquals(linkStatus, 200, "Status Code of the Product is not 200");
 	}
 
-	@Test(priority = 14)
-	public void checkProductIsAddedToWishList()
-	{
+	@Test(priority = 15)
+	public void checkProductIsAddedToWishList() {
 		boolean isAddedToWishList = details.addToWishList();
 		Assert.assertTrue(isAddedToWishList, "Selected Product Is Not Added in the Wish list");
-
 	}
 
-	@Test(priority = 15)
-	public void navigationTestToWishList()
-	{
+	@Test(priority = 16)
+	public void navigationTestToWishList() {
 		String wishListTitle = details.goToWishListPageFromProductDetails();
 		Assert.assertEquals(wishListTitle, Variables.wishListTitle, "Wish list title is not matching");
 	}
